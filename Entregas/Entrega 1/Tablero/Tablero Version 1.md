@@ -15,5 +15,10 @@ aplicación de software que vamos a modificar.
 Las tareas que consideramos inicialmente son:
 
 - Crear repositorio: Implica crear el repositorio, agregando a todos los integrantes del equipo
-- Definir template de issues: 
+- Crear tablero: Tablero inicial para comenzar a agregar las primeras tareas.
+- Definir template de issues: Definir un template común para todo el equipo, a seguir para todas las issues eventualmente creadas.
+- Definir proceso de gestión: En el contexto de Kanban, definir que ceremonias vamos a realizar y cómo las realizaremos.
+- Definir proceso de ingeniería: Es decir, el proceso de desarrollo, todo lo técnico, detallando cada paso.
+- Instalación del proyecto: Una tarea de este tipo para cada integrante del equipo, ya que se debe instalar el proyecto para todas las máquinas.
+- Analizar deuda técnica: Analizar el código recibido, realizar informe de calidad, etc.
 
