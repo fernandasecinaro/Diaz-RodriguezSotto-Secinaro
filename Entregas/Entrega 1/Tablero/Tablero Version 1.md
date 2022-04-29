@@ -22,3 +22,8 @@ Las tareas que consideramos inicialmente son:
 - Instalación del proyecto: Una tarea de este tipo para cada integrante del equipo, ya que se debe instalar el proyecto para todas las máquinas.
 - Analizar deuda técnica: Analizar el código recibido, realizar informe de calidad, etc.
 
+## Imagen
+
+<img width="1105" alt="image" src="https://user-images.githubusercontent.com/56087826/165879060-1017d461-833e-4cbb-b928-478083379236.png">
+
+
