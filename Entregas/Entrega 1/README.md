@@ -9,6 +9,10 @@
 
 [Link a la explicación de la evolución del tablero](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%201)
 
+## Stand-up semanal
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Stand-up%20semanal/StandupSemanal.md)
+
 ## Template de Issues
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Template%20de%20Issues/Template%20de%20Issues.md)
