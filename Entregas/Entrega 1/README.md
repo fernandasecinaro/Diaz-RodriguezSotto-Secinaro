@@ -7,7 +7,7 @@
 
 ## Tablero 
 
-[Link a la explicación de la evolución del tablero](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%201)
+[Link a la explicación de la evolución del tablero](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%201/Tablero)
 
 ## Stand-up semanal
 
