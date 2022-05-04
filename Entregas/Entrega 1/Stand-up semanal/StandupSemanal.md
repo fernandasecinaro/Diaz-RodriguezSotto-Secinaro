@@ -1,6 +1,6 @@
 # Stand-up Semanal
 
-Link a Youtube: 
+Link a Youtube: [Video](https://youtu.be/0PuEUFzkVuk)
 
 ## Correcciones
 
