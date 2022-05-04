@@ -23,6 +23,10 @@ A continuacion mostramos una imagen del template:
 
 <img width="546" alt="image" src="https://user-images.githubusercontent.com/56087826/166612145-8a5ef494-4fad-4e5e-a0a1-b15fa0b48d4f.png">
 
+## Adaptación de Issues
+
+Con los templates ya terminados, actualizamos todas las issues que ya habían sido creadas previamente para que cumplan con este template.
+
 ## Bibliografía
 
 Para crear los templates nos basamos en el siguiente documento visto en clase: 
