@@ -13,10 +13,6 @@
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Stand-up%20semanal/StandupSemanal.md)
 
-## Template de Issues
-
-[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Template%20de%20Issues/Template%20de%20Issues.md)
-
 ## Proceso de Gestión
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Proceso%20de%20Gestión/Proceso%20de%20Gestión.md)
@@ -24,6 +20,10 @@
 ## Proceso de Ingeniería
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Proceso%20de%20Ingenier%C3%ADa/Proceso%20de%20Ingenieria)
+
+## Template de Issues
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Template%20de%20Issues/Template%20de%20Issues.md)
 
 ## Análisis Deuda Técnica
 
