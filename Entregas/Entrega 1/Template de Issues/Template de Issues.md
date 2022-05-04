@@ -25,6 +25,6 @@ A continuacion mostramos una imagen del template:
 
 ## Bibliografía
 
-Para crear el template nos basamos en el siguiente documento visto en clase: 
+Para crear los templates nos basamos en el siguiente documento visto en clase: 
 
 https://www.topcoder.com/thrive/articles/project-management-on-github
