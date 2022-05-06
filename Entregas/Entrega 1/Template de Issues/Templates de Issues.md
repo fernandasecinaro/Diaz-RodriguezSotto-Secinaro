@@ -23,7 +23,7 @@ Para el template de las tareas, las cuales son independientes de una user story,
 
 A continuacion mostramos una imagen del template:
 
-<img width="546" alt="image" src="https://user-images.githubusercontent.com/56087826/166612145-8a5ef494-4fad-4e5e-a0a1-b15fa0b48d4f.png">
+![image](https://user-images.githubusercontent.com/56087826/167061450-d5e02e9e-eed1-4ab1-9fbc-d16d4f781972.png)
 
 ### Adaptación de Issues
 
