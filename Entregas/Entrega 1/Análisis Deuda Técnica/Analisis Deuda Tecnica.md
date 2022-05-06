@@ -2,7 +2,7 @@
 
 Para analizar la deuda técnica realizamos tres tareas diferentes:
 
-- [Testing exploratorio](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Testing%20exploratorio): Realizamos un testing general de la aplicación usando la interfaz de usuario.
+- [Testing exploratorio](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Testing%20exploratorio/Testing%20Exploratorio.md): Realizamos un testing general de la aplicación usando la interfaz de usuario.
 
 - [Análisis calidad de código backend](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Análisis%20Calidad%20de%20Código%20Backend/Análisis%20Calidad%20de%20Código%20Backend.md): Para analizar la calidad del código, por ejemplo, nombres de variables, código repetido, etc.
 
