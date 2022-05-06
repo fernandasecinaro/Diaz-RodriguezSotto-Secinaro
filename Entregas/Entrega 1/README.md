@@ -23,8 +23,12 @@
 
 ## Templates de Issues
 
-[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Template%20de%20Issues/Template%20de%20Issues.md)
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Template%20de%20Issues/Templates%20de%20Issues.md)
 
 ## Análisis Deuda Técnica
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Analisis%20Deuda%20Tecnica)
+
+## Retrospective
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Retrospective/Retrospective.md)
