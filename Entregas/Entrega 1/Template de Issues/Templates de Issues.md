@@ -61,4 +61,6 @@ Hicimos un template para los issues encontrados durannte el análisis de la deud
 - Clasificación: Si el issue es un bug, o un issue de usabilidad, problemas de estándar, etc.
 - Imágenes: En caso de que se necesite realizar una explicación del issue de forma más gráfica se recurre a la ayuda de imágenes.
 
+A continuacion mostramos una imagen del template:
+
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/56087826/167214718-16b53f76-523c-44f9-b20e-c3773c3f118d.png">
