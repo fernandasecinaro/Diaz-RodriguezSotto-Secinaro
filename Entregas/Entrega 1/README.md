@@ -50,6 +50,12 @@ Creamos un archivo acerca de la deuda técnica, que detalla el testing realizado
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Analisis%20Deuda%20Tecnica)
 
+## Registro de Esfuerzo
+
+Se realizó un registro de esfuerzo por tareas e integrantes
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Registro%20de%20Esfuerzo/Registro%20de%20Esfuerzo.md)
+
 ## Retrospective
 
 Realizamos una ceremonia de retrospective para darle cierre final a la entrega y discutir el proceso realizado, usando el método DAKI.
