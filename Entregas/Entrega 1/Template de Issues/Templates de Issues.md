@@ -32,7 +32,9 @@ ver en la [versión 3 del tablero](https://github.com/fernandasecinaro/Diaz-Rodr
 
 ## Template para User Stories
 
-Para el template de las user stories creímos conveniente mostrar los siguientes datos:
+Al finalizar nuestra definición de [proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Proceso%20de%20Ingenier%C3%ADa/Proceso%20de%20Ingenieria.md) pudimos comenzar a realizar el template para las user stories, esto se debe a que primero debíamos definir dicho proceso para saber de qué tareas de BDD se componen las user stories y así poder armar la tabla de esfuerzos que se va a ver a continuación. 
+
+Para este template creímos conveniente mostrar los siguientes datos:
 
 - Nombre: Nombre de la user story
 - Tamaño: Tamaño de la user story en story points
@@ -45,9 +47,3 @@ también se detalla el esfuerzo total, esto es, la suma de todos los esfuerzos r
 A continuacion mostramos una imagen del template:
 
 ![image](https://user-images.githubusercontent.com/56087826/167060980-9e26597e-cbec-42c3-9851-e9fc89906c89.png)
-
-## Bibliografía
-
-Para crear los templates nos basamos en el siguiente documento visto en clase: 
-
-https://www.topcoder.com/thrive/articles/project-management-on-github
