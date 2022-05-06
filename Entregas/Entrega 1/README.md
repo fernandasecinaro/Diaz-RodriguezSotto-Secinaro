@@ -61,3 +61,9 @@ Se realizó un registro de esfuerzo por tareas e integrantes
 Realizamos una ceremonia de retrospective para darle cierre final a la entrega y discutir el proceso realizado, usando el método DAKI.
 
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Retrospective/Retrospective.md)
+
+## Informe de Avance
+
+Realizamos un informe de avance para la entrega 1
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Informe%20de%20Avance/Informe%20de%20Avance.md)
