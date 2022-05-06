@@ -19,7 +19,7 @@
 
 ## Proceso de Ingeniería
 
-[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Proceso%20de%20Ingenier%C3%ADa/Proceso%20de%20Ingenieria)
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Proceso%20de%20Ingenier%C3%ADa/Proceso%20de%20Ingenieria.md)
 
 ## Templates de Issues
 
