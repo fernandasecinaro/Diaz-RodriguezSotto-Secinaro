@@ -12,7 +12,7 @@ En la raíz del repositorio se encuentran dos carpetas: Entregas y Material Obli
 
 - Material Obligatorio: En esta carpeta se encuentra el material originalmente provisto por la cátedra, con el cual vamos a estar trabando a lo largo de las entregas. Esto incluye: la letra del problema, la guía de despliegue, documentación, el código fuente tanto de backend como frontend, bases de datos y el release para correr la aplicación. 
 
-## Forma de trabajo
+## Releases
 
 Decidimos que al finalizar cada entrega hagamos un release, para que se pueda diferenciar fácilmente qué cosas se hicieron en cada una de las entregas.
 
