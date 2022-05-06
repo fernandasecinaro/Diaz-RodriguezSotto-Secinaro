@@ -1,4 +1,4 @@
-# Template de Issues
+# Templates de Issues
 
 [Link a templates](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/issues/templates/edit)
 
@@ -18,7 +18,7 @@ Para el template de las tareas, las cuales son independientes de una user story,
 
 - Título: Título corto pero descriptivo de la tarea
 - Descripción: Detalle de la tarea a realizar.
-- Esfuerzo y tamaño: Una tabla con 3 columnas: esfuerzo estimado (cuanto estimamos que va a llevar la tarea antes de empezar a realizarla), esfuerzo real (cuánto llevo realmente) y story points (tamaño). 
+- Esfuerzo: Una tabla con 2 columnas: esfuerzo estimado (cuanto estimamos que va a llevar la tarea antes de empezar a realizarla) y esfuerzo real (cuánto llevo realmente).
 - Label: En este caso la label siempre va a ser "Tarea", esta se pone por defecto. 
 
 A continuacion mostramos una imagen del template:
@@ -29,6 +29,22 @@ A continuacion mostramos una imagen del template:
 
 Con los templates ya terminados, actualizamos todas las issues que ya habían sido creadas previamente para que cumplan con este template. Esto se puede
 ver en la [versión 3 del tablero](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Tablero/Tablero%20versión%203.md)
+
+## Template para User Stories
+
+Para el template de las user stories creímos conveniente mostrar los siguientes datos:
+
+- Nombre: Nombre de la user story
+- Tamaño: Tamaño de la user story en story points
+- Narrativa: Narrativa de la user story. Escrita con el template "Como, quiero, para".
+- Criterios de aceptación: Se detallan todos los escenarios posibles para la user story. Deben ser escritos con el template "Dado, cuando, entonces".
+- Esfuerzo: Una tabla con 3 columnas: nombre de la tarea, esfuerzo estimado (cuanto estimamos que va a llevar la tarea antes de empezar a realizarla) y esfuerzo real (cuánto llevo realmente). Por cada tarea del ciclo de BDD ponemos una fila, indicando los esfuerzos antes mencionados para dicha tarea. Además,
+también se detalla el esfuerzo total, esto es, la suma de todos los esfuerzos reales.
+- Label: En este caso la label siempre va a ser "User Story", esta se pone por defecto. 
+
+A continuacion mostramos una imagen del template:
+
+![image](https://user-images.githubusercontent.com/56087826/167060980-9e26597e-cbec-42c3-9851-e9fc89906c89.png)
 
 ## Bibliografía
 
