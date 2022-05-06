@@ -4,7 +4,8 @@ A partir de nuestra [definición de proceso de gestión](https://github.com/fern
 agregamos ciertas tareas a nuestro tablero. Estas fueron:
 
 - Stand-up semanal: Agregamos esta tarea en la columna Done, ya que al momento de realizar este documento ya habíamos realizado la ceremonia, pero aún no la
-habíamos agregado al tablero.
+habíamos agregado al tablero. En esta primera entrega solo realizamos una stand-up, pero en el resto deberían ser dos, ya que las entregas son cada dos semanas y nuestros stand-ups son semanales. Por lo tanto, en el resto de las entregas debemos agregar dos tareas al tablero para las stand-ups, las cuales
+se podrían llamar "Stand-up semana 1" y "Stand-up semana 2".
 
 - Retrospective: La agregamos en el To Do, ya que claramente cuando terminamos nuestra definición de gestión aún no la habiamos realizado, ya que la retro es lo ultimo que
 haremos en cada entrega.
