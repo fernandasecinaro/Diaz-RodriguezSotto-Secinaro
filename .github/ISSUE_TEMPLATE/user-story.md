@@ -25,10 +25,10 @@ Entonces [Resultado]
 
 | Tarea | Esfuerzo estimado | Esfuerzo real |
 |---|---|---|
-|  Requirements Definition |   |   | 
-|  Test Cases Implementation |   |   | 
-|  Application Implementation |   |   | 
-|  Testing  |   |   | 
-|  Refactoring  |   |   | 
+|  Requirements Definition | [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona  |
+|  Test Cases Implementation | [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona |
+|  Application Implementation | [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona |
+|  Testing  | [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona  |
+|  Refactoring | [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona  |
 
 Esfuerzo Total: [Esfuerzo total] horas-persona

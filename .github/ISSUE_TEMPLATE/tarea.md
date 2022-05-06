@@ -16,4 +16,4 @@ assignees: ''
 
 | Esfuerzo Estimado | Esfuerzo real |
 |---|---|
-|   |   |
+| [Esfuerzo estimado] horas-persona  | [Esfuerzo real] horas-persona  |
