@@ -48,7 +48,7 @@ Se realizó un archivo explicando con detalle los templates creados para las dis
 
 Creamos un archivo acerca de la deuda técnica, que detalla el testing realizado y los issues encontrados.
 
-[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Analisis%20Deuda%20Tecnica)
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%201/Análisis%20Deuda%20Técnica/Analisis%20Deuda%20Tecnica.md)
 
 ## Retrospective
 
