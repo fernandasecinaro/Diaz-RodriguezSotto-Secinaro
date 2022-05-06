@@ -7,7 +7,7 @@ decidimos dividirla en otras tareas. Estas son:
 
 - Analizar código de frontend: Se debe analizar la calidad del código, por ejemplo, nombres de variables, código repetido, etc.
 
-- Analizar código de backend: Al igual que en el backend se debe analizar la calidad del código, por ejemplo, nombres de variables, código repetido, etc.
+- Analizar código de backend: Al igual que en el frontend se debe analizar la calidad del código, por ejemplo, nombres de variables, código repetido, etc.
 
 Estas tres tareas las dividimos entre los tres integrantes del equipo. A Fernanda se le asignó realizar el test exploratorio, a Juan Pablo analizar el código
 de frontend y a Martina analizar el código de backend.
