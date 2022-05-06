@@ -14,6 +14,6 @@ assignees: ''
 [Descripción]
 
 
-| Esfuerzo Estimado | Esfuerzo real | Story Points |
-|---|---|---|
-|   |   |   |
+| Esfuerzo Estimado | Esfuerzo real |
+|---|---|
+|   |   |
