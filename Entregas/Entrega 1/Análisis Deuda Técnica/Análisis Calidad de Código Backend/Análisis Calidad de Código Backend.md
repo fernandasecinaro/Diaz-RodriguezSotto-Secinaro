@@ -28,6 +28,7 @@
 - Tester: Martina
 - Duración: 10 minutos
 #### Defectos encontrados
+No se encontraron defectos
 
 ## Análisis de BusinessLogic
 - Inicio: 06/05/2022 - 19:50
