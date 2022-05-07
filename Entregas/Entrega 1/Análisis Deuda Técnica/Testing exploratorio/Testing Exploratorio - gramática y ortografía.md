@@ -1,4 +1,4 @@
-# Testing exploratorio
+# Testing exploratorio - gramática y ortografía
 
 ## Test #1
 
