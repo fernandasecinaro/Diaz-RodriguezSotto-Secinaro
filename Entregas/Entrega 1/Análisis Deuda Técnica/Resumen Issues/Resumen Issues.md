@@ -152,3 +152,9 @@ A continuación listamos los issues creados. Es importante destacar que es un re
 - Severidad: Media
 - Clasificación: Problemas de estándar
 
+# Comentarios innecesarios
+- Descripción: En la guarda que existe para la autenticación, su codigo cuenta con comentarios que no aportan información lo cual va en contra de Clean Code.
+- Severidad: Baja
+- Clasificación: Problemas de estándar
+
+
