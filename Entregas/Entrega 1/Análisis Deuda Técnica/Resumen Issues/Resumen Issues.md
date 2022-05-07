@@ -127,27 +127,27 @@ A continuación listamos los issues creados. Es importante destacar que es un re
 - Severidad: Baja
 - Clasificación: Problema de estandar
 
-# Array clave-valor en carpeta de enums
+## Array clave-valor en carpeta de enums
 - Descripción: En la carpeta 'enums' se encuentra un único archivo el cual contiene un array con varios objetos clave-valor los cuales detallan varios posibles estados. El array en si no es un problema pero el estar ubicado en la carpeta enums puede llevar a confusiones si se tiene en cuenta que TypeScript cuenta con enums en sí y este array no sería uno de ellos.
 - Severidad: Baja
 - Clasificación: Problemas de estándar
 
-# Extracción de campos para crear y modificar admins
+## Extracción de campos para crear y modificar admins
 - Descripción: Tanto el admin-detail en su sección de modificar como el admin-create en su sección para crear ambos utilizan los mismos campos de email y contraseña por lo que estos podrían ser extraídos a otro componente para simplificar el template.
 - Severidad: Media
 - Clasificación: Problemas de estándar
 
-# Template de lista de admins es demasiado larga
+## Template de lista de admins es demasiado larga
 - Descripción: El [admin-list-component](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Material%20Obligatorio/Obligatorio/MinTurFrontend/src/app/feature-modules/admin-list/admin-list.component.html) tiene una template demasiado grande la cual termina dependiendo de comentarios para tratar de clarificar las secciones lo cual va en contra de Clean Code y de la filosofía de angular de componentizar.
 - Severidad: Media
 - Clasificación: Problema de estándar
 
-# Codigo repetido en sección de confirmación
+## Codigo repetido en sección de confirmación
 - Descripción: El input para chequear una reserva debería de ver refactorizada su sección de confirmación ya que hay 3 secciones idénticas donde solo se altera el texto que se muestra pero que comparten todos los estilos y layout.
 - Severidad: Media
 - Clasificación: Problemas de estándar
 
-# Expresión regular con nombre genérico
+## Expresión regular con nombre genérico
 - Descripción: El componente [check-reservation-inputs](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Material%20Obligatorio/Obligatorio/MinTurFrontend/src/app/feature-modules/check-reservation/check-reservation-inputs/check-reservation-inputs.component.ts) en la parte de lógica cuenta con un problema de Clean Code en la función `validateReservationUniqueCode` ya que utiliza una expresión regular pero el nombre de la variable es simplemente `regex` y en ningún momento se dice que es lo que representa dicho patrón.
 - Severidad: Media
 - Clasificación: Problemas de estándar
