@@ -1,7 +1,5 @@
 # Testing exploratorio - gramática y ortografía
 
-## Test #1
-
 - Misión: Validar que la gramática y ortografía sean correctas en toda la aplicación.
 - Inicio: 06/05/2022 - 18:20
 - Tester: Fernanda
