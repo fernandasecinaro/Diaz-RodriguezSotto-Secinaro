@@ -22,4 +22,4 @@ Tarea | Integrante | Esfuerzo Estimado | Esfuerzo real |
 | Retrospective | Juan Pablo | - | 1 hora-persona |
 | Retrospective | Martina | - | 1 hora-persona |
 | Retrospective | Fernanda | - | 1 hora-persona |
-| Informe de avance entrega 1 | Juan Pablo | - |  |
+| Informe de avance entrega 1 | Juan Pablo | - | 0.3 horas-persona |
