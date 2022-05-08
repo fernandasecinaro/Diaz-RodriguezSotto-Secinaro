@@ -1,3 +1,3 @@
 # Retrospective
 
-![Resultado de la retrospectiva](https://user-images.githubusercontent.com/53418904/167311073-a3530103-40fa-4b80-84d0-99f82fbcc7f0.png)
+<img width="1259" alt="image" src="https://user-images.githubusercontent.com/56087826/167311164-95f63f82-6a4d-42ad-bad9-1bf2e429a7fd.png">
