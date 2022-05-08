@@ -157,4 +157,32 @@ A continuación listamos los issues creados. Es importante destacar que es un re
 - Severidad: Baja
 - Clasificación: Problemas de estándar
 
+# Clean code
+- Descripción:  No cumple SRP
+- Severidad: Media
+- Clasificación: Problemas de estándar
 
+# Validar atributos en los sets
+- Descripción: Mover las validaciones de los atributos de las entidades a los setters de los atributos
+- Severidad: Media
+- Clasificación: Problemas de estándar
+
+# Mover validaciones lógicas
+- Descripción: Mover validaciones lógicas que se encuentran en DataAccess
+- Severidad: Media
+- Clasificación: Problemas de estándar
+
+# Chequear manejo de excepciones
+- Descripción: Se maneja la excepción general Exception y pocas excepciones concretas
+- Severidad: Media
+- Clasificación: Problemas de estándar
+
+# Mover lógica y eliminar dependencias innecesarias
+- Descripción: Hay lógica en el acceso a datos y las clases lógicas solo acceden a repositorios
+- Severidad: Media
+- Clasificación: Problemas de estándar
+
+# Comparación de strings
+- Descripción: Los strings se comparan actualmente con ==
+- Severidad: Baja
+- Clasificación: Problemas de estándar
