@@ -6,6 +6,8 @@
 
 ## Reparación Bugs
 
+## Stand-up semanal
+
 ## Nuevas Funcionalidades
 
 ## Review
