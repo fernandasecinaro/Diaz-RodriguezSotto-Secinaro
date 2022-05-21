@@ -28,9 +28,9 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Install dependencies
-      working-directory: ./ISA2
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet restore
       
     - name: Build
-      working-directory: ./ISA2
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet build --configuration Release --no-restore
