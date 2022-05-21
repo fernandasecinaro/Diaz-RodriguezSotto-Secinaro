@@ -22,7 +22,7 @@ La diferencia respecto a la entrega 1 es que se eliminó el paso "Deployment". E
 No habíamos definido un proceso para los bugs anteriormente. Debemos separar los bugs de backend respecto a los de frontend. Ya que, en el primer caso,  aplicaremos la metodología TDD, pero en el segundo no.
 
 ### Bug Backend
-Como explicamos antes, la metodología usada para los bugs de backend va a ser TDD. O sea el proceso en este caso va a ser igual que para las nuevas user stories, a excepción del paso "Requirements Definition" que se va a omitir. Es decir, son los mismos pasos de BDD, a excepción del primero, que no se va a realizar en este caso:
+Como explicamos antes, la metodología usada para los bugs de backend va a ser TDD. O sea el proceso en este caso va a ser igual que para las nuevas user stories, a excepción del paso "Requirements Definition" que se va a omitir. Es decir, son los mismos pasos de BDD, a excepción del primero, que no se va a realizar en este caso. Además, el paso de Test Cases Implementation son pruebas unitarias, usando MsTets (En las nuevas US usamos SpecFlow, acá no):
 
 - Test Cases Implementation (Automation Tools): A diferencia de las nuevas user stories no vamos a usar SpecFlow, sino que vamos a realizar pruebas unitarias, usando MsTest como librería.
 
