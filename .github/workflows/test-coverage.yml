@@ -1,0 +1,35 @@
+name: test-dotnet
+
+on:
+  pull_request:
+    branches: [ develop ]
+
+env:
+  DOTNET_VERSION: '5.0.301' # The .NET SDK version to use
+
+jobs:
+  build:
+
+    name: test-win
+    runs-on: windows-latest
+  
+    steps:
+    
+    - name: Test
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
+      run: dotnet test MinTur.BusinessLogic.Test/MinTur.BusinessLogic.Test.csproj -l:trx || true
+      shell: bash
+    - if: always()
+      name: Report
+      uses: dorny/test-reporter@v1
+      with:
+        name: DotNET Tests Results
+        path: '**/*.trx'
+        reporter: dotnet-trx
+        fail-on-error: 'false'
+        
+    - name: Upload tests results
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: GitHubActionsTestsResults
+        path: '**/*.trx'
