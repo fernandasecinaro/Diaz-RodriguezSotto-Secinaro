@@ -37,4 +37,4 @@ jobs:
     
     - name: Test
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal --arch x64
