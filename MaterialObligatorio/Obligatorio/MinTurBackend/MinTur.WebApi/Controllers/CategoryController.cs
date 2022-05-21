@@ -13,7 +13,7 @@ namespace MinTur.WebApi.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryManage _categoryManager;
+        private readonly ICategoryManager _categoryManager;
 
         public CategoryController(ICategoryManager categoryManager)
         {
