@@ -3,7 +3,7 @@ name: build and test
 on:
   push:
   pull_request:
-    branches: [ develop ]
+    branches: [ main ]
     paths:
     - '**.cs'
     - '**.csproj'
@@ -18,7 +18,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v2
@@ -38,6 +38,3 @@ jobs:
     - name: Test
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet test --no-restore --verbosity normal
-      
-    - name: Codecov
-      uses: codecov/codecov-action@v1.5.2
