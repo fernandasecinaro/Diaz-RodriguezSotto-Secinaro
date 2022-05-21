@@ -38,3 +38,7 @@ En este caso, como mencionamos antes, no vamos a aplicar TDD, porque no vamos a 
 - Application Implementation (Code): En esta tarea se debe codificar la funcionalidad de la user story en un lenguaje de programación previamente definido (en nuestro caso Angular), de manera de arreglar el bug. Al finalizar esta tarea, tenemos la funcionalidad correcta.
 
 - Refactoring: Una vez que arreglamos el bug en el frontend debemos hacer el refactoring. Esto es modificar el código para mejorar al mismo y al diseño de nuestra aplicación.
+
+## ¿Cómo queda nuestro tablero al redefinir el proceso de ingeniería?
+
+[Link a explicación del tablero luego de redefinir nuestro proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%202/Tablero/Tablero%20versión%202.md)
