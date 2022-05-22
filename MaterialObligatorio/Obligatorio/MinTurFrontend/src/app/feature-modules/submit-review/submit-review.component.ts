@@ -13,7 +13,7 @@ import { ReviewDetailsModel } from 'src/app/shared/models/out/review-details-mod
 })
 export class SubmitReviewComponent implements OnInit {
   public reservationUniqueCode: string;
-  public reviewText: string;
+  public reviewText: string = "";
   public stars = 0;
   public displayError: boolean;
   public errorMessage: string;
@@ -84,7 +84,7 @@ export class SubmitReviewComponent implements OnInit {
   }
 
   private validateReviewText(): void{
-    if (this.reviewText == null){
+    if (!this.reviewText){
       this.displayError = true;
       this.errorMessage = 'Debe proveer una reseña sobre el hospedaje';
     }
@@ -102,7 +102,7 @@ export class SubmitReviewComponent implements OnInit {
     this.submitedReview = reviewDetails;
   }
 
-  private showError(error: HttpErrorResponse): void{
+  private showError(error: HttpErrorResponse): void{    
     console.log(error);
   }
 }

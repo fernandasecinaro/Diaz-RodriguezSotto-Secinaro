@@ -84,7 +84,7 @@ export class SubmitReviewInputComponent implements OnInit {
   }
 
   private validateReviewText(): void{
-    if (this.reviewText == null){
+    if (!this.reviewText){
       this.displayError = true;
       this.errorMessage = 'Debe proveer una reseña sobre el hospedaje';
     }
