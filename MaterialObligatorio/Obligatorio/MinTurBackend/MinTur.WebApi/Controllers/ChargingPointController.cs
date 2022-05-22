@@ -27,7 +27,7 @@ namespace MinTur.WebApi.Controllers
         [HttpPost]
         public IActionResult MakeChargingPoint([FromBody] ChargingPointIntentModel chargingPointIntentModel)
         {
-            ChargingPoint createdChargingPoint = _chargingPointManager.RegisterChargingPoint(chargingPointIntentModel.ToEntity());
+            int createdChargingPoint = _chargingPointManager.RegisterChargingPoint(chargingPointIntentModel.ToEntity());
             ChargingPointConfirmationModel confirmation = new ChargingPointConfirmationModel(createdChargingPoint);
             return Ok(confirmation);
         }

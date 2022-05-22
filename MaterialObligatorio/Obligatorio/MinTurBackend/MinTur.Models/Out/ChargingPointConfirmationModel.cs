@@ -7,9 +7,9 @@ namespace MinTur.Models.Out
     {
         public string UniqueCode { get; set; }
 
-        public ChargingPointConfirmationModel(ChargingPoint chargingPoint) 
+        public ChargingPointConfirmationModel(int chargingPointId) 
         {
-            UniqueCode = chargingPoint.Id.ToString();
+            UniqueCode = chargingPointId.ToString();
         }
 
         public override int GetHashCode()

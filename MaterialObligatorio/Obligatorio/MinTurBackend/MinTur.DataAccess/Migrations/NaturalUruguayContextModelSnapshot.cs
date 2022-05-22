@@ -92,6 +92,35 @@ namespace MinTur.DataAccess.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("MinTur.Domain.BusinessEntities.ChargingPoint", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TouristPointId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TouristPointId");
+
+                    b.ToTable("ChargingPoints");
+                });
+
             modelBuilder.Entity("MinTur.Domain.BusinessEntities.GuestGroup", b =>
                 {
                     b.Property<int>("Id")
@@ -360,6 +389,15 @@ namespace MinTur.DataAccess.Migrations
                     b.HasOne("MinTur.Domain.BusinessEntities.Administrator", "Administrator")
                         .WithMany()
                         .HasForeignKey("AdministratorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("MinTur.Domain.BusinessEntities.ChargingPoint", b =>
+                {
+                    b.HasOne("MinTur.Domain.BusinessEntities.TouristPoint", "TouristPoint")
+                        .WithMany()
+                        .HasForeignKey("TouristPointId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
