@@ -23,4 +23,9 @@
     <ProjectReference Include="..\MinTur.WebApi\MinTur.WebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\ChargePoints.feature">
+      <Visible>False</Visible>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
 </Project>
