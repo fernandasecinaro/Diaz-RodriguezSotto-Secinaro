@@ -22,12 +22,12 @@ namespace MinTur.ServiceRegistration.ServiceRegistrators
             serviceCollection.AddScoped<ICategoryManager, CategoryManager>();
             serviceCollection.AddScoped<IResortManager, ResortManager>();
             serviceCollection.AddScoped<IReservationManager, ReservationManager>();
+            serviceCollection.AddScoped<IChargingPointManager, ChargingPointManager>();
             serviceCollection.AddScoped<IReviewManager, ReviewManager>();
             serviceCollection.AddScoped<IAdministratorManager, AdministratorManager>();
             serviceCollection.AddScoped<IResortPricingCalculator, ResortPricingCalculator>();
             serviceCollection.AddScoped<IAuthenticationManager, AuthenticationManager>();
             serviceCollection.AddScoped<IImporterManager, ImporterManager>();
-            serviceCollection.AddScoped<IChargingPointManager, ChargingPointManager>();
         }
     }
 }

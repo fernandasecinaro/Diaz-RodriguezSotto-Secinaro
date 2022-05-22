@@ -51,9 +51,20 @@ namespace MinTur.DataAccess.Repositories
 
         private void StoreChargingPointInDb(ChargingPoint chargingPoint)
         {
-            Context.Set<ChargingPoint>().Add(chargingPoint);
+            using (var transaction = Context.Database.BeginTransaction())
+            {
 
-            Context.SaveChanges();
+                TouristPoint touristPoint = Context.Set<TouristPoint>().Where(r => r.Id == chargingPoint.TouristPoint.Id).FirstOrDefault();
+                chargingPoint.TouristPoint = touristPoint;
+
+                Context.Set<ChargingPoint>().Add(chargingPoint);
+
+                Context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT NaturalUruguayDB.dbo.ChargingPoints ON;");
+                Context.SaveChanges();
+                Context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT NaturalUruguayDB.dbo.ChargingPoints OFF;");
+                transaction.Commit();
+            }
+
         }
 
         private void DeleteChargingPointFromDb(ChargingPoint chargingPoint)

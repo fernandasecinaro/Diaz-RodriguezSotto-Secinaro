@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="Moq" Version="4.14.5" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
     <PackageReference Include="SpecFlow.MsTest" Version="3.9.40" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
@@ -20,12 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MinTur.BusinessLogic\MinTur.BusinessLogic.csproj" />
+    <ProjectReference Include="..\MinTur.DataAccess\MinTur.DataAccess.csproj" />
     <ProjectReference Include="..\MinTur.WebApi\MinTur.WebApi.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <SpecFlowFeatureFiles Update="Features\ChargePoints.feature">
-      <Visible>False</Visible>
-    </SpecFlowFeatureFiles>
-  </ItemGroup>
 </Project>

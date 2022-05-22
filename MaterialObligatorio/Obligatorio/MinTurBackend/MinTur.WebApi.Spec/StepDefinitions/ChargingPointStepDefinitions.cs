@@ -1,6 +1,17 @@
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
+using MinTur.WebApi.Controllers;
+using MinTur.BusinessLogic.ResourceManagers;
+using MinTur.DataAccess.Repositories;
+using MinTur.DataAccess.Contexts;
+using MinTur.DataAccessInterface.Facades;
+using MinTur.Domain.BusinessEntities;
+using MinTur.Models.In;
+using MinTur.Models.Out;
+using Moq;
+using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace MinTur.WebApi.Spec.StepDefinitions
 {
@@ -13,10 +24,21 @@ namespace MinTur.WebApi.Spec.StepDefinitions
         private string _address;
         private int _touristSpot;
         private bool _exists;
-        private int _result;
+        private ChargingPointConfirmationModel _result;
 
-        [Given("the the id (.*)")]
-        public void GivenTheFirstNumberIs(int id)
+        private TouristPointRepository _repository;
+        private NaturalUruguayContext _context;
+
+        private readonly ScenarioContext _scenarioContext;
+
+        public ChargingPointStepDefinitions(ScenarioContext scenarioContext)
+        {
+            _scenarioContext = scenarioContext;
+        }
+
+
+        [Given("the id (.*)")]
+        public void GivenTheIdIs(int id)
         {
             _id = id;
         }
@@ -57,15 +79,47 @@ namespace MinTur.WebApi.Spec.StepDefinitions
         [When("I click \"Add charging point\"")]
         public void WhenIClickAddChargingPoint()
         {
-            //TODO: implement act (action) logic
+            var chargingPoint = new ChargingPoint()
+            {
+                Id = _id,
+                Name = _name,
+                Description = _description,
+                Address = _address,
+                TouristPoint = new TouristPoint() { Id = _touristSpot },
+            };
+            var repositoryMock = new Mock<IRepositoryFacade>(MockBehavior.Strict);
+            repositoryMock.Setup(r => r.GetTouristPointById(It.IsAny<int>())).Returns(new TouristPoint() { Id= _touristSpot});
+            repositoryMock.Setup(r => r.StoreChargingPoint(chargingPoint)).Returns(_id);
 
-            throw new PendingStepException();
+            var logic = new ChargingPointManager(repositoryMock.Object);
+            var controller = new ChargingPointController(logic);
+
+            try
+            {
+                var request = new ChargingPointIntentModel()
+                {
+                    Id = _id,
+                    Name = _name,
+                    Description = _description,
+                    Address = _address,
+                    TouristPointId = _touristSpot,
+                };
+                var requestResult = controller.MakeChargingPoint(request);
+                var okResult = requestResult as OkObjectResult;
+                _result = okResult.Value as ChargingPointConfirmationModel;
+            } catch (Exception e)
+            {
+                _result = new ChargingPointConfirmationModel(0)
+                {
+                    UniqueCode = e.Message,
+                };
+            }
         }
 
         [Then("I recieve a message showing (.*)")]
         public void ThenTheResultShouldBe(string result)
         {
-            _result.Should().Equals(result);
+            _result.UniqueCode.Should().Equals(result);
         }
     }
 }

@@ -140,7 +140,11 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
+<<<<<<< HEAD
  testRunner.Then("a new charging point is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+=======
+ testRunner.Then("I recieve a message showing \"1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+>>>>>>> develop
 #line hidden
             }
             this.ScenarioCleanup();
@@ -306,6 +310,7 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+<<<<<<< HEAD
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Create charging point with invalid tourist spot")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
         public virtual void CreateChargingPointWithInvalidTouristSpot()
@@ -313,6 +318,15 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create charging point with invalid tourist spot", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+=======
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Create charging point with invalid description")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
+        public virtual void CreateChargingPointWithInvalidDescription()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create charging point with invalid description", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+>>>>>>> develop
 #line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -343,15 +357,23 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the address \"cuareim\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 47
+<<<<<<< HEAD
  testRunner.And("the tourist spot \"xyz\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 48
  testRunner.And("the description \"Un nuevo punto de carga\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+=======
+ testRunner.And("the tourist spot 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 48
+ testRunner.And("the description \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+>>>>>>> develop
 #line hidden
 #line 49
  testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 50
+<<<<<<< HEAD
  testRunner.Then("I recieve a message showing \"Invalid tourist spot\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -405,11 +427,14 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 59
+=======
+>>>>>>> develop
  testRunner.Then("I recieve a message showing \"Invalid description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
+<<<<<<< HEAD
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Delete charging point with valid id")]
@@ -498,6 +523,8 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+=======
+>>>>>>> develop
     }
 }
 #pragma warning restore
