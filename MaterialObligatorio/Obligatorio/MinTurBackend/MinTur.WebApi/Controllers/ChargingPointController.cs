@@ -31,5 +31,12 @@ namespace MinTur.WebApi.Controllers
             ChargingPointConfirmationModel confirmation = new ChargingPointConfirmationModel(createdChargingPoint);
             return Ok(confirmation);
         }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteChargingPoint(int id)
+        {
+            _chargingPointManager.DeleteChargingPointById(id);
+            return Ok(new { ResultMessage = $"Charging point {id} succesfully deleted" });
+        }
     }
 }
