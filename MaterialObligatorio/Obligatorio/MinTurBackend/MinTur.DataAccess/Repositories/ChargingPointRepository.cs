@@ -27,12 +27,20 @@ namespace MinTur.DataAccess.Repositories
             return chargingPoint.Id;
         }
 
-        public void DeleteChargingPoint(int id)
+        public ChargingPoint GetChargingPoint(int id)
         {
             if (!ChargingPointExists(id))
                 throw new ResourceNotFoundException("Could not find specified charging point");
 
-            DeleteChargingPointFromDb(id);
+            return Context.Set<ChargingPoint>().AsNoTracking().Where(c => c.Id == id).FirstOrDefault();
+        }
+
+        public void DeleteChargingPoint(ChargingPoint chargingPoint)
+        {
+            if (!ChargingPointExists(chargingPoint.Id))
+                throw new ResourceNotFoundException("Could not find specified charging point");
+
+            DeleteChargingPointFromDb(chargingPoint);
         }
 
         private bool TouristPointExists(int touristPointId)
@@ -54,10 +62,8 @@ namespace MinTur.DataAccess.Repositories
             Context.SaveChanges();
         }
 
-        private void DeleteChargingPointFromDb(int id)
+        private void DeleteChargingPointFromDb(ChargingPoint chargingPoint)
         {
-            ChargingPoint chargingPoint = Context.Set<ChargingPoint>().AsNoTracking().Where(c => c.Id == id).FirstOrDefault();
-
             Context.Set<ChargingPoint>().Remove(chargingPoint);
 
             Context.SaveChanges();
