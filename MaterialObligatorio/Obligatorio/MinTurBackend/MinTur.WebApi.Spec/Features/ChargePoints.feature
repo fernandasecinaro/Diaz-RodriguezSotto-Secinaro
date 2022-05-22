@@ -62,7 +62,7 @@ Scenario: Delete charging point with valid id
 	Given the id 1234
 	And that a charging point with that id exists
 	When I click "Delete charging point"
-	Then the charging point is deleted
+	Then I recieve a message showing "Charging point 1234 succesfully deleted"
 
 Scenario: Delete charging point with invalid id
 	Given the id 12345
