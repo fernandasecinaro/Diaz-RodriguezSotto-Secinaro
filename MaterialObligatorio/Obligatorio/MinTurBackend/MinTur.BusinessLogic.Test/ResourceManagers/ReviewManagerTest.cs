@@ -33,24 +33,50 @@ namespace MinTur.BusinessLogic.Test.ResourceManagers
             Resort retrievedResort = CreateResortWithSpecificId(retrievedReservation.Resort.Id);
             Review createdReview = CreateReview(reviewId, retrievedReservation);
 
-            _reviewMock.SetupAllProperties();
+            Review review = new Review() { Text = "El mejor del mundo", Id = reviewId, Stars = 5 };
 
             _repositoryFacadeMock.Setup(r => r.GetReservationById(reservationId)).Returns(retrievedReservation);
             _repositoryFacadeMock.Setup(r => r.GetResortById(retrievedReservation.Resort.Id)).Returns(_resortMock.Object);
-            _reviewMock.Setup(r => r.ValidOrFail());
-            _resortMock.Setup(r => r.UpdateResortPunctuation(_reviewMock.Object));
-            _repositoryFacadeMock.Setup(r => r.StoreReview(_reviewMock.Object)).Returns(reviewId);
+            _resortMock.Setup(r => r.UpdateResortPunctuation(It.IsAny<Review>()));
+            _repositoryFacadeMock.Setup(r => r.StoreReview(It.IsAny<Review>())).Returns(reviewId);
             _repositoryFacadeMock.Setup(r => r.UpdateResort(_resortMock.Object));
             _repositoryFacadeMock.Setup(r => r.GetReviewById(reviewId)).Returns(createdReview);
 
             ReviewManager reviewManager = new ReviewManager(_repositoryFacadeMock.Object);
-            Review retrievedReview = reviewManager.RegisterReview(reservationId, _reviewMock.Object);
+            Review retrievedReview = reviewManager.RegisterReview(reservationId, review);
 
             _repositoryFacadeMock.VerifyAll();
             _reviewMock.VerifyAll();
             _resortMock.VerifyAll();
             Assert.AreEqual(createdReview, retrievedReview);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void RegisterEmptyReview()
+        {
+            int reviewId = 6;
+            Guid reservationId = Guid.NewGuid();
+
+            Review review = new Review() { Text = "", Id = reviewId, Stars = 5 };
+
+            ReviewManager reviewManager = new ReviewManager(_repositoryFacadeMock.Object);
+            Review _ = reviewManager.RegisterReview(reservationId, review);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void RegisterNullReview()
+        {
+            int reviewId = 6;
+            Guid reservationId = Guid.NewGuid();
+
+            Review review = new Review() { Text = null, Id = reviewId, Stars = 5 };
+
+            ReviewManager reviewManager = new ReviewManager(_repositoryFacadeMock.Object);
+            Review _ = reviewManager.RegisterReview(reservationId, review);
+        }
+
 
         #region Helpers
         private Review CreateReview(int reviewId, Reservation reservation) 
@@ -64,6 +90,31 @@ namespace MinTur.BusinessLogic.Test.ResourceManagers
                 Text = "El mejor del mundo"
             };
         }
+
+        private Review CreateEmptyReview(int reviewId, Reservation reservation)
+        {
+            return new Review()
+            {
+                Id = reviewId,
+                Name = reservation.Name,
+                Surname = reservation.Surname,
+                Stars = 5,
+                Text = ""
+            };
+        }
+
+        private Review CreateNullReview(int reviewId, Reservation reservation)
+        {
+            return new Review()
+            {
+                Id = reviewId,
+                Name = reservation.Name,
+                Surname = reservation.Surname,
+                Stars = 5,
+                Text = null
+            };
+        }
+
         private Reservation CreateReservation() 
         {
             return new Reservation()
