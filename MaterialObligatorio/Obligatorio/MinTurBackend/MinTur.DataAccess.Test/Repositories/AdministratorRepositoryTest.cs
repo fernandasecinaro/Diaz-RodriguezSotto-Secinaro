@@ -150,17 +150,36 @@ namespace MinTur.DataAccess.Test.Repositories
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void UpdateAdministratorWhichEmailAlreadyExists()
+        public void UpdateAdministratorWithSameEmailUpdatesDb()
         {
             int administratorId = 7;
             Administrator administrator = CreateAdministratorWithSpecificId(administratorId);
-            InsertAdministratorIntoDb(administrator);
-
             Administrator newAdministrator = new Administrator()
             {
                 Id = administratorId,
-                Email = administrator.Email,
+                Email = "admin@gmail.com",
+                Password = "Password2"
+            };
+            InsertAdministratorIntoDb(administrator);
+
+            _repository.UpdateAdministrator(newAdministrator);
+            Administrator retrievedAdministrator = _context.Administrators.AsNoTracking().Where(a => a.Id == administratorId).FirstOrDefault();
+
+            Assert.AreEqual(retrievedAdministrator, newAdministrator);
+            Assert.AreEqual(retrievedAdministrator.Password, newAdministrator.Password);
+            Assert.AreEqual(retrievedAdministrator.Email, newAdministrator.Email);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void UpdateAdministratorWhichEmailAlreadyExists()
+        {
+            LoadAdministrators(new List<Administrator>());
+
+            Administrator newAdministrator = new Administrator()
+            {
+                Id = 1,
+                Email = "email2@email.com",
                 Password = "Password2"
             };
 
