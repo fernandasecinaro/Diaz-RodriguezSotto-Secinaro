@@ -33,6 +33,7 @@ namespace MinTur.DataAccess.Facades
             _authenticationTokenRepository = new AuthenticationTokenRepository(_context);
             _administratorRepository = new AdministratorRepository(_context);
             _reviewRepository = new ReviewRepository(_context);
+            _chargingPointRepository = new ChargingPointRepository(_context);
         }
 
         public List<Category> GetAllCategories()
@@ -162,6 +163,11 @@ namespace MinTur.DataAccess.Facades
         public int StoreChargingPoint(ChargingPoint chargingPoint)
         {
             return _chargingPointRepository.StoreChargingPoint(chargingPoint);
+        }
+
+        public void DeleteChargingPoint(int id)
+        {
+            _chargingPointRepository.DeleteChargingPoint(id);
         }
     }
 }
