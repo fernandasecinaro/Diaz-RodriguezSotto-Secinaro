@@ -8,3 +8,10 @@ El resultado de la standup se puede ver en el [tablero](https://github.com/ferna
 
 <img width="563" alt="image" src="https://user-images.githubusercontent.com/56087826/169628544-1f0e3db8-8a1f-43ec-b1fc-c0be087081fc.png">
 
+## Semana 2
+
+Realizamos otro standup para verificar el progreso, y realizar la coordinación de las tareas. La misma fue asincrónica, mediante Whatsapp:
+
+![unnamed](https://user-images.githubusercontent.com/56087826/169718702-a7ca3fd8-9a02-453d-92ff-bcc0b899196f.jpg)
+
+![unnamed (1)](https://user-images.githubusercontent.com/56087826/169718706-c2929c22-5bd9-423d-911b-b24f42491655.jpg)
