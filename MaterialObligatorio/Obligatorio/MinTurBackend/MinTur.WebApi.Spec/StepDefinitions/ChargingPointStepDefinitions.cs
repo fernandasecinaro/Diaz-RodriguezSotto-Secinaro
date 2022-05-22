@@ -12,6 +12,7 @@ namespace MinTur.WebApi.Spec.StepDefinitions
         private string _description;
         private string _address;
         private int _touristSpot;
+        private bool _exists;
         private int _result;
 
         [Given("the the id (.*)")]
@@ -42,6 +43,15 @@ namespace MinTur.WebApi.Spec.StepDefinitions
         public void GivenTheDescriptionIs(string description)
         {
             _description = description;
+        }
+
+        [Given("that a charging point with that id (.*)")]
+        public void GivenTheChargingPointExists(string exists)
+        {
+            if (exists.Equals("exists"))
+                _exists = true;
+            else
+                _exists = false;
         }
 
         [When("I click \"Add charging point\"")]
