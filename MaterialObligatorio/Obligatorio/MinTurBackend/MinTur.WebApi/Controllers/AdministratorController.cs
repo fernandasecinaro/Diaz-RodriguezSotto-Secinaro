@@ -68,6 +68,5 @@ namespace MinTur.WebApi.Controllers
             AdministratorBasicInfoModel administratorBasicInfoModel = new AdministratorBasicInfoModel(retrievedAdministrator);
             return Ok(administratorBasicInfoModel);
         }
-
     }
 }

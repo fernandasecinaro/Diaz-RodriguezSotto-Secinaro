@@ -127,7 +127,6 @@ namespace MinTur.WebApi.Test.Controllers
             _administratorManagerMock.VerifyAll();
             Assert.AreEqual(new AdministratorBasicInfoModel(expectedAdministrator), okResult.Value);
         }
-
         #region Helpers
         public AdministratorIntentModel CreateAdministratorIntentModel()
         {
