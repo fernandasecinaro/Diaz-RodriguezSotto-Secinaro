@@ -116,6 +116,33 @@ namespace MinTur.WebApi.Spec.StepDefinitions
             }
         }
 
+        [When("I click \"Delete charging point\"")]
+        public void WhenIClickDeleteChargingPoint()
+        {
+            var repositoryMock = new Mock<IRepositoryFacade>(MockBehavior.Strict);
+            repositoryMock.Setup(r => r.DeleteChargingPoint(_id));
+            
+            var logic = new ChargingPointManager(repositoryMock.Object);
+            var controller = new ChargingPointController(logic);
+
+            try
+            {
+                int requestedId = _id;
+                var requestResult = controller.DeleteChargingPoint(requestedId);
+                var okResult = requestResult as OkObjectResult;
+                _result = new ChargingPointConfirmationModel(0)
+                {
+                    UniqueCode = okResult.ToString()
+                };
+            } catch (Exception e)
+            {
+                _result = new ChargingPointConfirmationModel(0)
+                {
+                    UniqueCode = e.Message,
+                };
+            }
+        }
+
         [Then("I recieve a message showing (.*)")]
         public void ThenTheResultShouldBe(string result)
         {

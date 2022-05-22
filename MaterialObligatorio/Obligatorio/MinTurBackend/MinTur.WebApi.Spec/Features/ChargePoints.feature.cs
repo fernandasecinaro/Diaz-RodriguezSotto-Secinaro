@@ -140,11 +140,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
-<<<<<<< HEAD
- testRunner.Then("a new charging point is added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-=======
  testRunner.Then("I recieve a message showing \"1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
->>>>>>> develop
 #line hidden
             }
             this.ScenarioCleanup();
@@ -310,15 +306,6 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-<<<<<<< HEAD
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Create charging point with invalid tourist spot")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
-        public virtual void CreateChargingPointWithInvalidTouristSpot()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create charging point with invalid tourist spot", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-=======
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Create charging point with invalid description")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
         public virtual void CreateChargingPointWithInvalidDescription()
@@ -326,7 +313,6 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create charging point with invalid description", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
->>>>>>> develop
 #line 43
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -357,37 +343,29 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the address \"cuareim\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 47
-<<<<<<< HEAD
- testRunner.And("the tourist spot \"xyz\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 48
- testRunner.And("the description \"Un nuevo punto de carga\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-=======
  testRunner.And("the tourist spot 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 48
  testRunner.And("the description \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
->>>>>>> develop
 #line hidden
 #line 49
  testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 50
-<<<<<<< HEAD
- testRunner.Then("I recieve a message showing \"Invalid tourist spot\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I recieve a message showing \"Invalid description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Create charging point with invalid description")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Delete charging point with valid id")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
-        public virtual void CreateChargingPointWithInvalidDescription()
+        public virtual void DeleteChargingPointWithValidId()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create charging point with invalid description", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete charging point with valid id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 52
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -412,69 +390,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("the id 1234", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 54
- testRunner.And("the name \"punto de carga\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 55
- testRunner.And("the address \"cuareim\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 56
- testRunner.And("the tourist spot 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 57
- testRunner.And("the description \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 58
- testRunner.When("I click \"Add charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 59
-=======
->>>>>>> develop
- testRunner.Then("I recieve a message showing \"Invalid description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-<<<<<<< HEAD
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Delete charging point with valid id")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "ChargePoints")]
-        public virtual void DeleteChargingPointWithValidId()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete charging point with valid id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 61
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 62
- testRunner.Given("the id 1234", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 63
  testRunner.And("that a charging point with that id exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 64
+#line 55
  testRunner.When("I click \"Delete charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 65
- testRunner.Then("the charging point is deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 56
+ testRunner.Then("I recieve a message showing \"Charging point 1234 succesfully deleted\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -488,7 +410,7 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete charging point with invalid id", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 67
+#line 58
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -508,23 +430,21 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 68
+#line 59
  testRunner.Given("the id 12345", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 69
+#line 60
  testRunner.And("that a charging point with that id does not exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 70
+#line 61
  testRunner.When("I click \"Delete charging point\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 71
+#line 62
  testRunner.Then("I recieve a message showing \"The specified charging point does not exist\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
-=======
->>>>>>> develop
     }
 }
 #pragma warning restore
