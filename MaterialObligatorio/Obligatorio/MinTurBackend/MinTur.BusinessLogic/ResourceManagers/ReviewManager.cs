@@ -16,6 +16,8 @@ namespace MinTur.BusinessLogic.ResourceManagers
 
         public Review RegisterReview(Guid reservationId, Review review)
         {
+            CheckReviewIsNotEmpty(review);
+
             Reservation retrievedReservation = _repositoryFacade.GetReservationById(reservationId);
             Resort relatedResort = _repositoryFacade.GetResortById(retrievedReservation.Resort.Id);
 
@@ -32,5 +34,17 @@ namespace MinTur.BusinessLogic.ResourceManagers
             return _repositoryFacade.GetReviewById(newReviewId);
         }
 
+        private static void CheckReviewIsNotEmpty(Review review)
+        {
+            if (ReviewIsEmpty(review))
+            {
+                throw new InvalidOperationException("Review is empty");
+            }
+        }
+
+        private static bool ReviewIsEmpty(Review review)
+        {
+            return review.Text == "" || review.Text == null;
+        }
     }
 }
