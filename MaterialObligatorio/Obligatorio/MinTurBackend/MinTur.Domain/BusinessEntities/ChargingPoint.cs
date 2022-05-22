@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using MinTur.Exceptions;
+using System.Linq;
 
 namespace MinTur.Domain.BusinessEntities
 {
@@ -22,6 +23,7 @@ namespace MinTur.Domain.BusinessEntities
         public string Address { get; set; }
         [Required]
         public TouristPoint TouristPoint { get; set; }
+        public int TouristPointId { get; set; }
         [Required]
         public string Description { get; set; }
 
@@ -35,9 +37,12 @@ namespace MinTur.Domain.BusinessEntities
 
         private void ValidateId()
         {
-            Regex fourDigitRegex = new Regex(@"/^\d{4}$/");
+            Regex fourDigitRegex = new Regex(@"/^([0-9])$/");
 
-            if (Id == null || !fourDigitRegex.IsMatch(Id.ToString()))
+            string id = Id.ToString();
+            bool isNumericId = !id.Any(c => c < '0' || c > '9');
+            bool hasFourDigitsOnly = fourDigitRegex.IsMatch(id);
+            if (!isNumericId || id.Length > 4)
                 throw new InvalidRequestDataException("Invalid id");
         }
 
