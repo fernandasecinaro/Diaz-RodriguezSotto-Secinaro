@@ -1,1 +1,0 @@
-# Pipeline - Versión 1
