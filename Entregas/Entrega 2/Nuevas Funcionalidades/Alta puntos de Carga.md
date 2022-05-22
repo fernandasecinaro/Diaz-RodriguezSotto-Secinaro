@@ -8,7 +8,7 @@ Quiero dar de alta un punto de carga para autos eléctricos,
 Para informar a los turistas acerca de un nuevo lugar donde pueden cargar sus autos
 ```
 
-Una vez realizado esto, la colocamos en el backlog. Y luego, cuando la persona asignada comenzó a trabajar en esta user story, realizó la implementación siguiendo los pasos definidos en el [proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%202/Redefinici%C3%B3n%20Proceso%20Ingenier%C3%ADa/Redefinici%C3%B3n%20Proceso%20Ingenieria.md)
+Una vez realizado esto, la colocamos en el backlog. Y luego, cuando la persona asignada comenzó a trabajar en esta user story, realizó la implementación siguiendo los pasos definidos en el [proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%202/Redefinici%C3%B3n%20Proceso%20Ingenier%C3%ADa/Redefinici%C3%B3n%20Proceso%20Ingenieria.md), es decir, BDD.
 
 Es decir, primero se realizó el paso de Requirements Definitions (CCC), donde se escribieron los escenarios:
 
