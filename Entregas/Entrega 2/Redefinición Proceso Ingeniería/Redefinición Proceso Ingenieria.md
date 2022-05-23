@@ -41,4 +41,4 @@ En este caso, como mencionamos antes, no vamos a aplicar TDD, porque no vamos a 
 
 ## ¿Cómo queda nuestro tablero al redefinir el proceso de ingeniería?
 
-[Link a explicación del tablero luego de redefinir nuestro proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%202/Tablero/Tablero%20versión%202.md)
+[Link a explicación del tablero luego de redefinir nuestro proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%202/Tablero/Tablero%20-%20Versión%202.md)
