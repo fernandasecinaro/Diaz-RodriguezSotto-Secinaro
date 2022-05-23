@@ -26,5 +26,5 @@ Tarea | Integrante | Esfuerzo Estimado | Esfuerzo real |
 | Crear review (Refactoring) | Fernanda | 0.2 horas-persona | 0.15 horas-persona |
 | Review | Todos | 0.25 horas-persona | 1.5 horas-persona |
 | Retrospective | Todos | 1 horas-persona | 0.75 horas-persona |
-| Informe de avance | Juan Pablo | 0.25 horas-persona | - |
+| Informe de avance | Juan Pablo | 0.25 horas-persona | 0.25 horas-persona |
 | Registro de esfuerzo | Martina | 0.25 horas-persona | 0.25 horas-persona |
