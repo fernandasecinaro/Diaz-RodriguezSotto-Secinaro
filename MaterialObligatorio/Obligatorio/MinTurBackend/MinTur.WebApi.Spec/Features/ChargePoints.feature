@@ -48,3 +48,15 @@ Scenario: Create charging point with invalid description
 	And the description "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 	When I click "Add charging point"
 	Then I recieve a message showing "Invalid description" 
+
+Scenario: Delete charging point with valid id
+	Given the id 1234
+	And that a charging point with that id exists
+	When I click "Delete charging point"
+	Then I recieve a message showing "Charging point 1234 succesfully deleted"
+
+Scenario: Delete charging point with invalid id
+	Given the id 12345
+	And that a charging point with that id does not exist
+	When I click "Delete charging point"
+	Then I recieve a message showing "The specified charging point does not exist"

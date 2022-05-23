@@ -154,5 +154,10 @@ namespace MinTur.ServiceRegistration.Test.Dummies
         {
             throw new NotImplementedException();
         }
+
+        public void DeleteChargingPoint(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

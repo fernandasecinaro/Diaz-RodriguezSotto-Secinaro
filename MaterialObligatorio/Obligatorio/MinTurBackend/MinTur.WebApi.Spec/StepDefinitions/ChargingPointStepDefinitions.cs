@@ -23,6 +23,7 @@ namespace MinTur.WebApi.Spec.StepDefinitions
         private string _description;
         private string _address;
         private int _touristSpot;
+        private bool _exists;
         private ChargingPointConfirmationModel _result;
 
         private TouristPointRepository _repository;
@@ -66,6 +67,15 @@ namespace MinTur.WebApi.Spec.StepDefinitions
             _description = description;
         }
 
+        [Given("that a charging point with that id (.*)")]
+        public void GivenTheChargingPointExists(string exists)
+        {
+            if (exists.Equals("exists"))
+                _exists = true;
+            else
+                _exists = false;
+        }
+
         [When("I click \"Add charging point\"")]
         public void WhenIClickAddChargingPoint()
         {
@@ -97,6 +107,33 @@ namespace MinTur.WebApi.Spec.StepDefinitions
                 var requestResult = controller.MakeChargingPoint(request);
                 var okResult = requestResult as OkObjectResult;
                 _result = okResult.Value as ChargingPointConfirmationModel;
+            } catch (Exception e)
+            {
+                _result = new ChargingPointConfirmationModel(0)
+                {
+                    UniqueCode = e.Message,
+                };
+            }
+        }
+
+        [When("I click \"Delete charging point\"")]
+        public void WhenIClickDeleteChargingPoint()
+        {
+            var repositoryMock = new Mock<IRepositoryFacade>(MockBehavior.Strict);
+            repositoryMock.Setup(r => r.DeleteChargingPoint(_id));
+            
+            var logic = new ChargingPointManager(repositoryMock.Object);
+            var controller = new ChargingPointController(logic);
+
+            try
+            {
+                int requestedId = _id;
+                var requestResult = controller.DeleteChargingPoint(requestedId);
+                var okResult = requestResult as OkObjectResult;
+                _result = new ChargingPointConfirmationModel(0)
+                {
+                    UniqueCode = okResult.ToString()
+                };
             } catch (Exception e)
             {
                 _result = new ChargingPointConfirmationModel(0)
