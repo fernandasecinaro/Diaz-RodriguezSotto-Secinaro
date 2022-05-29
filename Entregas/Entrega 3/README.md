@@ -31,3 +31,5 @@
 ## Registro de Esfuerzo
 
 ## Informe de Avance
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Informe%20Avance/Informe%20de%20Avance.md)
