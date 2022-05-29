@@ -8,6 +8,8 @@
 
 ## Tablero
 
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%203/Tablero)
+
 ## Mantenimiento Pipeline
 
 ## Nuevas funcionalidades (frontend)
