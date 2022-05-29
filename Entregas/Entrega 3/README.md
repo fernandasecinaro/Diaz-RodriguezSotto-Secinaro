@@ -28,4 +28,6 @@
 
 ## Registro de Esfuerzo
 
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Registro%20Esfuerzo/Registro%20Esfuerzo.md)
+
 ## Informe de Avance
