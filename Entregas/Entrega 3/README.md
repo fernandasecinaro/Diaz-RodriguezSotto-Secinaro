@@ -2,6 +2,8 @@
 
 ## Stand-up semanal
 
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Stand-up%20semanal/Stand-up%20semanal.md)
+
 ## Redefinición proceso de ingeniería
 
 ## Tablero
