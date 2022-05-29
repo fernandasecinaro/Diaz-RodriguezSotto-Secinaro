@@ -33,3 +33,5 @@
 [Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Registro%20Esfuerzo/Registro%20Esfuerzo.md)
 
 ## Informe de Avance
+
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Informe%20Avance/Informe%20de%20Avance.md)
