@@ -22,6 +22,8 @@
 
 ## Review
 
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Review/Review.md)
+
 ## Retrospective
 
 ## Registro de Esfuerzo
