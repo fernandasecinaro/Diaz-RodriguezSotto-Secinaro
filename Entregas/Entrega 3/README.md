@@ -26,6 +26,8 @@
 
 ## Retrospective
 
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Retrospective/Retrospective.md)
+
 ## Registro de Esfuerzo
 
 ## Informe de Avance
