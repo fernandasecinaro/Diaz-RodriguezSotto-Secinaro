@@ -4,5 +4,9 @@ En esta versión del tablero realizamos cambios a partir de haber [redefinido pr
 
 En esta versión del tablero agregamos la columna "Integration Testing", para verificar que el frontend y el backend funcionan bien juntos. 
 
-![Captura de Pantalla 2022-05-29 a la(s) 19 53 32](https://user-images.githubusercontent.com/56087826/170894495-5217bfc2-6578-4ff5-ab8e-6f1c2e1f0552.png)
+Además, también definimos un nuevo flujo para las user stories, considerando que la implementación abarca tanto el frontend como el backend:
+
+<img width="1403" alt="Captura de Pantalla 2022-05-31 a la(s) 21 52 01" src="https://user-images.githubusercontent.com/56087826/171308321-27cc080f-b2e1-431c-8984-0f16b0ef79c3.png">
+
+
 
