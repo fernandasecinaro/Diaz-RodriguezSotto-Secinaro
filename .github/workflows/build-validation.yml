@@ -1,4 +1,4 @@
-name: build
+name: pipeline
 
 on:
   push:
@@ -34,3 +34,29 @@ jobs:
     - name: Build
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet build --configuration Release --no-restore
+
+
+  test: 
+
+    needs: build 
+    name: test-${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+
+    steps: 
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Install dependencies
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
+      run: dotnet restore
+      
+    - name: Build
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Test
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
+      run: dotnet test --no-build --verbosity normal
