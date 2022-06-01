@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build:prod": "NODE_ENV=production ng build --prod",
     "update-selenium": "webdriver-manager update",
-    "selenium": " webdriver-manager start"
+    "selenium": " webdriver-manager start",
+    "protractor": "protractor protractor.conf.js"
   },
   "private": true,
   "dependencies": {

@@ -21,6 +21,7 @@ Given(/^the url "([^"]*)"$/, function (url, callback) {
 
 Given(/^the id "([^"]*)"$/, function (_id, callback) {
   id = _id;
+  element(by.id("removeChargingPointIdInp")).value = _id;
   callback();
 });
 
@@ -33,6 +34,6 @@ When(/^I wait for (\d+) ms$/, function (timeToWait, callback) {
     setTimeout(callback, timeToWait);
 });
 
-Then(/the page title should be "([^"]*)"$/, function (text, callback) {
-    expect(element(by.id("removeChargingPointResult").innerHTML)).to.eventually.equal(text).and.notify(callback);
+Then(/^I should see the message "([^"]*)"$/, function (text, callback) {
+    expect(element(by.css(".removeChargingPointResult")).innerHTML).to.equal(text).and.notify(callback);
 });
