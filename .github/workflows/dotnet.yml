@@ -57,7 +57,7 @@ jobs:
       
     - name: Build
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --no-restore
 
     - name: Test
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
