@@ -10,10 +10,6 @@ export enum RegionRoutes {
   REGIONS = 'explore/regions'
 }
 
-export enum ChargingPointRoutes {
-  REMOVE = 'remove-charging-point',
-}
-
 export enum ResortRoutes {
   RESORTS = 'explore/resorts',
   RESORT_LIST = 'admin/resort',
