@@ -12,9 +12,9 @@ A partir de realizar estos cambios, tuvimos que hacer ciertas modificaciones en 
 
 Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos los siguientes pasos:
 
-- **Requirements Definition**: Escribimos los criterios de aceptación para el backend y el frontend
+- **Requirements Definition**: Escribimos los criterios de aceptación.
 
-- **Test Cases Implementation**: En el caso del backend realizamos los casos de prueba con SpecFlow. Por otro lado, en el frontend realizamos los casos de prueba usando protractor y cucumber. 
+- **Test Cases Implementation**: En el caso del backend realizamos los casos de prueba con SpecFlow. Por otro lado, en el frontend realizamos los casos de prueba usando Selenium. Vale destacar que hubo que realizar ciertas modificaciones de los escenarios escritos en el primero paso para adaptarlos a las distintas tecnologías. Por ejemplo, en el caso del frontend, en Selenium no podemos automatizar los escenarios que se pasaban del largo máximo de caracteres del input, ya que al implementarlos en el paso 3, los inputs tendrían un atributo "max" que no deja que se escriba más de ese largo.
 
 - **Application Implementation**: En este paso codificamos la funcionalidad. En el caso del backend lo hicimos en .NET, mientras que en el frontend usamos Angular.
 
@@ -24,4 +24,4 @@ Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos lo
 
 - **Integration Testing**: Realizamos una prueba de integración para comprobar que el frontend y el backend funcionen juntos tal cual es esperado. Para esto usamos el IDE de Cucumber.
 
-Algo importante a destacar de esta funcionalidad para el frontend es que lo ideal sería que cuando se realice correctamente el alta del punto de carga se borren los valores del formulario. Realmente quisimos hacer esto, pero de la forma que están implementado los inputs iba a llevar un buen tiempo, por lo que decidimos agregarlo como una issue a realizar. 
+Algo importante a destacar de esta funcionalidad para el frontend es que lo ideal sería que cuando se realice correctamente el alta del punto de carga se borren los valores del formulario. Realmente quisimos hacer esto, pero de la forma que están implementado los inputs iba a llevar un buen tiempo, por lo que decidimos agregarlo como una issue a realizar, como posible mejora de usabilidad. 
