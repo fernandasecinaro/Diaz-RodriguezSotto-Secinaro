@@ -28,11 +28,11 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Install dependencies
-      working-directory: ./MaterialObligatorio/Obligatorio/Ministerio de Turismo
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet restore
       
     - name: Build
-      working-directory: ./MaterialObligatorio/Obligatorio/Ministerio de Turismo
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet build --configuration Release --no-restore
 
 
@@ -52,13 +52,13 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Install dependencies
-      working-directory: ./MaterialObligatorio/Obligatorio/Ministerio de Turismo
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet restore
       
     - name: Build
-      working-directory: ./MaterialObligatorio/Obligatorio/Ministerio de Turismo
-      run: dotnet build --no-restore
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
+      run: dotnet build --configuration Debug --no-restore
 
     - name: Test
-      working-directory: ./MaterialObligatorio/Obligatorio/Ministerio de Turismo
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet test --no-build --verbosity normal
