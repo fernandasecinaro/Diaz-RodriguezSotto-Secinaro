@@ -5,6 +5,10 @@ export enum ReservationRoutes {
   UPDATE_STATE = 'admin/update-reservation-state'
 }
 
+export enum ChargingPointsRoutes {
+  DEFAULT = 'charging-points-registration',
+}
+
 export enum RegionRoutes {
   DEFAULT = 'explore',
   REGIONS = 'explore/regions'

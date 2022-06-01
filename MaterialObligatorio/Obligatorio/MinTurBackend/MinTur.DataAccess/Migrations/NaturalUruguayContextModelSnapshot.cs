@@ -111,12 +111,12 @@ namespace MinTur.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TouristPointId")
+                    b.Property<int>("RegionId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TouristPointId");
+                    b.HasIndex("RegionId");
 
                     b.ToTable("ChargingPoints");
                 });
@@ -395,9 +395,9 @@ namespace MinTur.DataAccess.Migrations
 
             modelBuilder.Entity("MinTur.Domain.BusinessEntities.ChargingPoint", b =>
                 {
-                    b.HasOne("MinTur.Domain.BusinessEntities.TouristPoint", "TouristPoint")
+                    b.HasOne("MinTur.Domain.BusinessEntities.Region", "Region")
                         .WithMany()
-                        .HasForeignKey("TouristPointId")
+                        .HasForeignKey("RegionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

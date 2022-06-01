@@ -10,6 +10,8 @@ import { CreateTouristPointModule } from './feature-modules/create-tourist-point
 import { CreateTouristPointComponent } from './feature-modules/create-tourist-point/create-tourist-point.component';
 import { AdminCreateModule } from './feature-modules/admin-create/admin-create.module';
 import { AdminCreateComponent } from './feature-modules/admin-create/admin-create.component';
+import { ChargingPointsComponent } from './feature-modules/charging-points/charging-points.component';
+import { ChargingPointsModule } from './feature-modules/charging-points/charging-points.module'
 import { AdminDetailModule } from './feature-modules/admin-detail/admin-detail.module';
 import { AdminDetailComponent } from './feature-modules/admin-detail/admin-detail.component';
 import { AdminListModule } from './feature-modules/admin-list/admin-list.module';
@@ -36,7 +38,7 @@ import { ReservationReportModule } from './feature-modules/reservation-report/re
 import { ImportingComponent } from './feature-modules/importing/importing.component';
 import { ImportingModule } from './feature-modules/importing/importing.module';
 // tslint:disable-next-line:max-line-length
-import { AdminSpecificRoutes, ImporterRoutes, RegionRoutes, ReservationRoutes, ResortRoutes, ReviewRoutes, SessionRoutes, TouristPointRoutes } from './core/routes';
+import { AdminSpecificRoutes, ChargingPointsRoutes, ImporterRoutes, RegionRoutes, ReservationRoutes, ResortRoutes, ReviewRoutes, SessionRoutes, TouristPointRoutes } from './core/routes';
 
 const routes: Routes = [
   { path: '', redirectTo: RegionRoutes.REGIONS, pathMatch: 'full'},
@@ -48,6 +50,7 @@ const routes: Routes = [
   { path: ResortRoutes.RESORT_DETAIL, component: ExploreOneResortComponent},
   { path: ReviewRoutes.REVIEW, component: SubmitReviewComponent},
   { path: SessionRoutes.LOGIN, component: LoginComponent},
+  { path: ChargingPointsRoutes.DEFAULT, component: ChargingPointsComponent},
   { path: AdminSpecificRoutes.ADMIN_LIST, component: AdminListComponent, canActivate: [AuthGuard]},
   { path: `${AdminSpecificRoutes.ADMIN_DETAIL}/:administratorId`, component: AdminDetailComponent, canActivate: [AuthGuard]},
   { path: AdminSpecificRoutes.ADMIN_CREATE, component: AdminCreateComponent, canActivate: [AuthGuard]},
@@ -73,6 +76,7 @@ const routes: Routes = [
     AdminListModule,
     AdminDetailModule,
     AdminCreateModule,
+    ChargingPointsModule,
     CreateTouristPointModule,
     UpdateResortAvailabilityModule,
     UpdateReservationStateModule,

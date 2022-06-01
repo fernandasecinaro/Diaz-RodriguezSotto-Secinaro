@@ -8,5 +8,6 @@ namespace MinTur.DataAccessInterface.Repositories
     {
         int StoreChargingPoint(ChargingPoint chargingPoint);
         void DeleteChargingPoint(int id);
+        ChargingPoint GetChargingPointById(int regionId);
     }
 }

@@ -85,7 +85,7 @@ namespace MinTur.WebApi.Spec.StepDefinitions
                 Name = _name,
                 Description = _description,
                 Address = _address,
-                TouristPoint = new TouristPoint() { Id = _touristSpot },
+                Region = new Region() { Id = _touristSpot },
             };
             var repositoryMock = new Mock<IRepositoryFacade>(MockBehavior.Strict);
             repositoryMock.Setup(r => r.GetTouristPointById(It.IsAny<int>())).Returns(new TouristPoint() { Id= _touristSpot});
@@ -102,7 +102,7 @@ namespace MinTur.WebApi.Spec.StepDefinitions
                     Name = _name,
                     Description = _description,
                     Address = _address,
-                    TouristPointId = _touristSpot,
+                    RegionId = _touristSpot,
                 };
                 var requestResult = controller.MakeChargingPoint(request);
                 var okResult = requestResult as OkObjectResult;
