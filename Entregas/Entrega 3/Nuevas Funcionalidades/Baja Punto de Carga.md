@@ -1,6 +1,6 @@
 # Baja Punto de Carga
 
-Como comentario importante queremos destacar que realizamos un cambio en la narrativa de la user story, respecto a la de la entrega 2. Ya que, en la entrega anterior, habíamos considerado que solo los administradores de la aplicación podían realizar el alta de un punto de carga. En cambio, ahora decidimos realizar una modificación, pasando a considerar que cualquier usuario del sistema puede realizar dicha funcionalidad. Por lo tanto, la nueva narrativa es:
+Como comentario importante queremos destacar que realizamos un cambio en la narrativa de la user story, respecto a la de la entrega 2. Ya que, en la entrega anterior, habíamos considerado que solo los administradores de la aplicación podían realizar la baja de un punto de carga. En cambio, ahora decidimos realizar una modificación, pasando a considerar que cualquier usuario del sistema puede realizar dicha funcionalidad. Por lo tanto, la nueva narrativa es:
 
 ```
 Como usuario,
