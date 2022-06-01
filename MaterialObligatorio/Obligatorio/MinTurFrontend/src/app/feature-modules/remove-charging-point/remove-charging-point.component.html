@@ -19,7 +19,7 @@
     </button>
   </div>
 </div>
-<div class="ml-10 mr-10 mt-6 removeChargingPointResult">
+<div *ngIf="finished" class="ml-10 mr-10 mt-6 removeChargingPointResult">
   El punto de carga ha sido dado de baja
 </div>
 <div *ngIf="displayError" class="ml-10 mr-10 mt-6">

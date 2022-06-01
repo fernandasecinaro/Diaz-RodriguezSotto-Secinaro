@@ -34,6 +34,10 @@ When(/^I wait for (\d+) ms$/, function (timeToWait, callback) {
     setTimeout(callback, timeToWait);
 });
 
-Then(/^I should see the message "([^"]*)"$/, function (text, callback) {
-    expect(element(by.css(".removeChargingPointResult")).innerHTML).to.equal(text).and.notify(callback);
+Then(/^I should see the message "([^"]*)"$/, function (text) {
+  browser.sleep(3000);
+  browser.waitForAngular().then(() => {
+    const message = element(by.css(".removeChargingPointResult"));
+    expect(message.getText()).to.eventually.equal(text);
+  });
 });
