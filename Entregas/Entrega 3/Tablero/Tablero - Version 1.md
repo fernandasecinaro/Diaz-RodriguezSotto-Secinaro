@@ -1,6 +1,6 @@
 # Tablero versión 1
 
-Se agregaron los tickets nuevos asociados a la entrega 2, para cumplir con la definition of done. 
+Luego del stand-up de la semana 1 se agregaron los tickets nuevos asociados a la entrega 2, para cumplir con la definition of done. 
 Las nuevas user stories de frontend se agregaron a la columna Backlog. Mientras que las tareas no asociadas a ninguna US se agregaron 
 a la columna To Do.
 
