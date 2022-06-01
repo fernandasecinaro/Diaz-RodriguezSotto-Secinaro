@@ -1,4 +1,4 @@
-name: pipeline
+name: Pipeline .NET
 
 on:
   push:
@@ -14,7 +14,7 @@ env:
 jobs:
   build:
 
-    name: build-${{matrix.os}}
+    name: build-${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -38,9 +38,11 @@ jobs:
 
   test: 
 
-    needs: build 
-    name: test-${{matrix.os}}
+    name: test-${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
 
     steps: 
     - uses: actions/checkout@v2
