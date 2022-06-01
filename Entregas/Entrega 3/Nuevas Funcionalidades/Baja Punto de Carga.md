@@ -12,9 +12,9 @@ A partir de realizar estos cambios, tuvimos que hacer ciertas modificaciones en 
 
 Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos los siguientes pasos:
 
-- **Requirements Definition**: Escribimos los criterios de aceptación para el backend y el frontend
+- **Requirements Definition**: Escribimos los criterios de aceptación.
 
-- **Test Cases Implementation**: En el caso del backend realizamos los casos de prueba con SpecFlow. Por otro lado, en el frontend realizamos los casos de prueba usando protractor y cucumber. 
+- **Test Cases Implementation**: En el caso del backend realizamos los casos de prueba con SpecFlow. Por otro lado, en el frontend realizamos los casos de prueba usando Selenium. Vale destacar que hubo que realizar ciertas modificaciones de los escenarios escritos en el primero paso para adaptarlos a las distintas tecnologías. Por ejemplo, en el caso del frontend, en Selenium no podemos probar el escenario donde el largo de dígitos del id se pasa del largo máximo, ya que al implementarlos en el paso 3, los inputs tendrían un atributo "max" que no deja que se escriba más de ese largo. 
 
 - **Application Implementation**: En este paso codificamos la funcionalidad. En el caso del backend lo hicimos en .NET, mientras que en el frontend usamos Angular.
 
