@@ -2,7 +2,7 @@
 
 En esta versión del tablero realizamos cambios a partir de haber [redefinido previamente nuestro proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Redefinicion%20Proceso%20Ingenieria/Redefinición%20Proceso%20Ingenieria.md).
 
-En esta versión del tablero agregamos la columna "Integration Testing", para verificar que el frontend y el backend funcionan bien juntos. 
+Agregamos la columna "Integration Testing", para verificar que el frontend y el backend funcionan bien juntos. 
 
 Además, también definimos un nuevo flujo para las user stories, considerando que la implementación abarca tanto el frontend como el backend:
 
