@@ -36,12 +36,15 @@ import { ReservationReportModule } from './feature-modules/reservation-report/re
 import { ImportingComponent } from './feature-modules/importing/importing.component';
 import { ImportingModule } from './feature-modules/importing/importing.module';
 // tslint:disable-next-line:max-line-length
-import { AdminSpecificRoutes, ImporterRoutes, RegionRoutes, ReservationRoutes, ResortRoutes, ReviewRoutes, SessionRoutes, TouristPointRoutes } from './core/routes';
+import { AdminSpecificRoutes, ChargingPointRoutes, ImporterRoutes, RegionRoutes, ReservationRoutes, ResortRoutes, ReviewRoutes, SessionRoutes, TouristPointRoutes } from './core/routes';
+import { RemoveChargingPointComponent } from './feature-modules/remove-charging-point/remove-charging-point.component';
+import { RemoveChargingPointModule } from './feature-modules/remove-charging-point/remove-charging-point.module';
 
 const routes: Routes = [
   { path: '', redirectTo: RegionRoutes.REGIONS, pathMatch: 'full'},
   { path: RegionRoutes.DEFAULT, redirectTo: RegionRoutes.REGIONS, pathMatch: 'full'},
   { path: RegionRoutes.REGIONS, component: ExploreRegionsComponent},
+  { path: ChargingPointRoutes.REMOVE, component: RemoveChargingPointComponent},
   { path: ReservationRoutes.CHECK_RESERVATION, component: CheckReservationComponent},
   { path: TouristPointRoutes.TOURIST_POINTS, component: ExploreTouristPointsComponent},
   { path: ResortRoutes.RESORTS, component: ExploreResortsComponent},
@@ -72,6 +75,7 @@ const routes: Routes = [
     LoginModule,
     AdminListModule,
     AdminDetailModule,
+    RemoveChargingPointModule,
     AdminCreateModule,
     CreateTouristPointModule,
     UpdateResortAvailabilityModule,

@@ -7,6 +7,10 @@ export enum ReservationEndpoints {
   GENERATE_REPORT = 'reservations/generateReport'
 }
 
+export enum ChargingPointEndpoints {
+  DELETE_CHARGING_POINT = 'chargingPoints/%s',
+}
+
 export enum CategoryEndpoints {
   GET_CATEGORIES = 'categories',
   GET_ONE_CATEGORY = 'categories/%s',
