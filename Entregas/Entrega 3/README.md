@@ -18,7 +18,7 @@
 
 ## Nuevas funcionalidades (frontend)
 
-[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Nuevas%20Funcionalidades%20(frontend)/Nuevas%20Funcionalidades%20(frontend).md)
+[Link](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/tree/develop/Entregas/Entrega%203/Nuevas%20Funcionalidades)
 
 ## Review
 
