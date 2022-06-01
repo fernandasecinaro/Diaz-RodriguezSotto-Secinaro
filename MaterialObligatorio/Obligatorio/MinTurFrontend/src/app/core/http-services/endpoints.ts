@@ -38,6 +38,10 @@ export enum TouristPointEndpoints {
   CREATE_TOURIST_POINTS = 'touristPoints'
 }
 
+export enum ChargingPointEndpoints {
+  CREATE_CHARGING_POINT = 'chargingPoints'
+}
+
 export enum SessionEndpoints {
   LOGIN = 'login'
 }

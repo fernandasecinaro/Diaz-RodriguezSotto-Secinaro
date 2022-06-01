@@ -1,14 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using MinTur.BusinessLogicInterface.ResourceManagers;
-using MinTur.Domain.BusinessEntities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using MinTur.Models.In;
 using MinTur.Models.Out;
-using MinTur.WebApi.Filters;
-using MinTur.Domain.Reports;
 
 namespace MinTur.WebApi.Controllers
 {

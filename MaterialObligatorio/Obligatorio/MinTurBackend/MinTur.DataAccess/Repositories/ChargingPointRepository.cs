@@ -19,9 +19,6 @@ namespace MinTur.DataAccess.Repositories
 
         public int StoreChargingPoint(ChargingPoint chargingPoint)
         {
-            if (!TouristPointExists(chargingPoint.TouristPoint.Id))
-                throw new ResourceNotFoundException("Could not find specified tourist point");
-
             StoreChargingPointInDb(chargingPoint);
 
             return chargingPoint.Id;
@@ -37,12 +34,6 @@ namespace MinTur.DataAccess.Repositories
             DeleteChargingPointFromDb(chargingPoint);
         }
 
-        private bool TouristPointExists(int touristPointId)
-        {
-            TouristPoint touristPoint = Context.Set<TouristPoint>().AsNoTracking().Where(r => r.Id == touristPointId).FirstOrDefault();
-            return touristPoint != null;
-        }
-
         private bool ChargingPointExists(int id)
         {
             ChargingPoint chargingPoint = Context.Set<ChargingPoint>().AsNoTracking().Where(c => c.Id == id).FirstOrDefault();
@@ -54,8 +45,8 @@ namespace MinTur.DataAccess.Repositories
             using (var transaction = Context.Database.BeginTransaction())
             {
 
-                TouristPoint touristPoint = Context.Set<TouristPoint>().Where(r => r.Id == chargingPoint.TouristPoint.Id).FirstOrDefault();
-                chargingPoint.TouristPoint = touristPoint;
+                Region region = Context.Set<Region>().Where(r => r.Id == chargingPoint.RegionId).FirstOrDefault();
+                chargingPoint.Region = region;
 
                 Context.Set<ChargingPoint>().Add(chargingPoint);
 
@@ -72,6 +63,12 @@ namespace MinTur.DataAccess.Repositories
             Context.Set<ChargingPoint>().Remove(chargingPoint);
 
             Context.SaveChanges();
+        }
+
+        public ChargingPoint GetChargingPointById(int id)
+        {
+            ChargingPoint point = Context.Set<ChargingPoint>().Where(r => r.Id == id).FirstOrDefault();
+            return point;
         }
     }
 }
