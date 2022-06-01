@@ -7,15 +7,12 @@ export enum ReservationRoutes {
 
 export enum ChargingPointsRoutes {
   DEFAULT = 'charging-points-registration',
+  REMOVE = 'remove-charging-point',
 }
 
 export enum RegionRoutes {
   DEFAULT = 'explore',
   REGIONS = 'explore/regions'
-}
-
-export enum ChargingPointRoutes {
-  REMOVE = 'remove-charging-point',
 }
 
 export enum ResortRoutes {
