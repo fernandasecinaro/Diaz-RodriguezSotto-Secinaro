@@ -23,3 +23,5 @@ Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos lo
 - **Refactoring**: Realizamos refactoring del código para mejorar la calidad del mismo.
 
 - **Integration Testing**: Realizamos una prueba de integración para comprobar que el frontend y el backend funcionen juntos tal cual es esperado. Para esto usamos el IDE de Cucumber.
+
+Algo importante a destacar de esta funcionalidad para el frontend es que lo ideal sería que cuando se realice correctamente el alta del punto de carga se borren los valores del formulario. Realmente quisimos hacer esto, pero de la forma que están implementado los inputs iba a llevar un buen tiempo, por lo que decidimos agregarlo como una issue a realizar. 
