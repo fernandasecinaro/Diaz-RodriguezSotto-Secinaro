@@ -11,6 +11,7 @@ import { CreateTouristPointComponent } from './feature-modules/create-tourist-po
 import { AdminCreateModule } from './feature-modules/admin-create/admin-create.module';
 import { AdminCreateComponent } from './feature-modules/admin-create/admin-create.component';
 import { ChargingPointsComponent } from './feature-modules/charging-points/charging-points.component';
+import { RemoveChargingPointComponent } from './feature-modules/remove-charging-point/remove-charging-point.component';
 import { ChargingPointsModule } from './feature-modules/charging-points/charging-points.module'
 import { AdminDetailModule } from './feature-modules/admin-detail/admin-detail.module';
 import { AdminDetailComponent } from './feature-modules/admin-detail/admin-detail.component';
@@ -39,11 +40,13 @@ import { ImportingComponent } from './feature-modules/importing/importing.compon
 import { ImportingModule } from './feature-modules/importing/importing.module';
 // tslint:disable-next-line:max-line-length
 import { AdminSpecificRoutes, ChargingPointsRoutes, ImporterRoutes, RegionRoutes, ReservationRoutes, ResortRoutes, ReviewRoutes, SessionRoutes, TouristPointRoutes } from './core/routes';
+import { RemoveChargingPointModule } from './feature-modules/remove-charging-point/remove-charging-point.module';
 
 const routes: Routes = [
   { path: '', redirectTo: RegionRoutes.REGIONS, pathMatch: 'full'},
   { path: RegionRoutes.DEFAULT, redirectTo: RegionRoutes.REGIONS, pathMatch: 'full'},
   { path: RegionRoutes.REGIONS, component: ExploreRegionsComponent},
+  { path: ChargingPointsRoutes.REMOVE, component: RemoveChargingPointComponent},
   { path: ReservationRoutes.CHECK_RESERVATION, component: CheckReservationComponent},
   { path: TouristPointRoutes.TOURIST_POINTS, component: ExploreTouristPointsComponent},
   { path: ResortRoutes.RESORTS, component: ExploreResortsComponent},
@@ -75,6 +78,7 @@ const routes: Routes = [
     LoginModule,
     AdminListModule,
     AdminDetailModule,
+    RemoveChargingPointModule,
     AdminCreateModule,
     ChargingPointsModule,
     CreateTouristPointModule,

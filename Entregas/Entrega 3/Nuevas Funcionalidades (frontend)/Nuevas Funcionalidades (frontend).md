@@ -1,1 +1,0 @@
-# Nuevas Funcionalidades (frontend)
