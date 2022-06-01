@@ -8,15 +8,13 @@ A continuación detallamos el proceso de ingeniería para nuevas user stories, (
 
 ## Nuevas User Stories
 
-Como ahora hay que realizar también la implementación del frontend, definimos el siguiente proceso de ingeniería:
-
 Se va a realizar BDD, pero además, le vamos a agregar un paso extra, que es el de Integration Testing. Por lo tanto, el proceso para las user stories es:
 
-- Requirements Definition (CCC): En este paso el input es la user story con solo el nombre y la narrativa definida, ya que esta información proviene del cliente o de quien haya actuado como product owner. El desarrollador encargado de esta tarea debe definir los criterios de aceptación de la user story, es decir, los distintos escenarios posibles en el lenguaje Gherkin (es importante aclarar que los escenarios de backend y frontend pueden variar entre sí). Esto lo logra a partir de la conversación con la persona que actuó como product owner. Al finalizar, el output de esta tarea es la user story con toda la información completa: nombre, narrativa y criterios de aceptación. Además, en la tarjeta de la user story se debe insertar el tamaño de la misma.
+- Requirements Definition (CCC): En este paso el input es la user story con solo el nombre y la narrativa definida, ya que esta información proviene del cliente o de quien haya actuado como product owner. El desarrollador encargado de esta tarea debe definir los criterios de aceptación de la user story, es decir, los distintos escenarios posibles en el lenguaje Gherkin (es importante aclarar que los escenarios de backend y frontend pueden variar luego en la etapa de Test Cases Implementation, ya que se deben adaptar a las tecnologías). Esto lo logra a partir de la conversación con la persona que actuó como product owner. Al finalizar, el output de esta tarea es la user story con toda la información completa: nombre, narrativa y criterios de aceptación. Además, en la tarjeta de la user story se debe insertar el tamaño de la misma.
 
-A partir de este paso la user story se subdivide en 2 user stories: una de backend y otra de frontend. Las cuales se pueden trabajar en paralelo por diferentes desarrolladores. Por ende, los siguientes 4 pasos se desarrollan de forma paralela (hasta refactoring inclusive), mientras que al llegar al último paso (integration testing) se vuelven a juntar para verificar que funcionen bien de forma unida.
+A partir de este paso la user story se subdivide en 2 user stories: una de backend y otra de frontend. Las cuales se pueden trabajar en paralelo por diferentes desarrolladores. Por ende, los siguientes 4 pasos se desarrollan de forma paralela para el backend y para el frontend (hasta refactoring inclusive), mientras que al llegar al último paso (integration testing) se vuelven a juntar para verificar que funcionen bien de forma unida.
 
-- Test Cases Implementation (Automation Tools): En esta tarea el input es la user story con toda su información, es decir, lo hecho en el paso de requirements definitions. A partir de esto se deben implementar los casos de prueba con herramientas de automatización, para automatizar el testing funcional. En el caso del backend vamos a implementarlas con SpecFlow, mientras que en el frontend se realiza con protractor y Cucumber.
+- Test Cases Implementation (Automation Tools): En esta tarea el input es la user story con toda su información, es decir, lo hecho en el paso de requirements definitions. A partir de esto se deben implementar los casos de prueba con herramientas de automatización, para automatizar el testing funcional. En el caso del backend vamos a implementarlas con SpecFlow, mientras que en el frontend se realiza con Selenium.
 
 - Application Implementation (Code): En este paso el input es la user story con su respectiva implementación de test cases. En esta tarea se debe codificar la funcionalidad de la user story en un lenguaje de programación previamente definido (en nuestro caso .NET para el backend y Angular para el frontend), de manera de cumplir con todos los criterios de aceptación escritos en el paso de requirements definition. Al finalizar esta tarea, tenemos la funcionalidad hecha.
 
@@ -29,5 +27,3 @@ A partir de este paso la user story se subdivide en 2 user stories: una de backe
 ## ¿Cómo queda nuestro tablero al redefinir el proceso de ingeniería?
 
 [Link a explicación del tablero luego de redefinir nuestro proceso de ingeniería](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/blob/develop/Entregas/Entrega%203/Tablero/Tablero%20-%20Version%202.md)
-
-
