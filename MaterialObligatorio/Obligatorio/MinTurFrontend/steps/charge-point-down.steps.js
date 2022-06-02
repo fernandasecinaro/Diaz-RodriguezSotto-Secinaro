@@ -19,7 +19,18 @@ When('I click on "Dar de baja" button', function () {
   element(by.css('#charging-point-delete-button')).click();
 });
 
-Then('I should see the message {string}', function (string) {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
+Then('the charging point is deleted and a success message {string} is shown', function (string) {
+  browser.sleep(3000);
+  browser.waitForAngular().then(() => {
+      const message = element(by.css('#success-delete-paragraph')).getText();
+      expect(message).to.eventually.equal(string);
+  });
+});
+
+Then('the charging point is not deleted and an error message {string} is shown', function (string) {
+  browser.sleep(3000);
+  browser.waitForAngular().then(() => {
+      const message = element(by.css('#error-delete-paragraph')).getText();
+      expect(message).to.eventually.equal(string);
+  });
 });
