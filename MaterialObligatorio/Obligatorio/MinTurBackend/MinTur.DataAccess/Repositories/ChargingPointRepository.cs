@@ -27,7 +27,7 @@ namespace MinTur.DataAccess.Repositories
         public void DeleteChargingPoint(int id)
         {
             if (!ChargingPointExists(id))
-                throw new ResourceNotFoundException("Could not find specified charging point");
+                throw new InvalidRequestDataException("El punto de carga no existe");
 
             ChargingPoint chargingPoint = Context.Set<ChargingPoint>().AsNoTracking().Where(c => c.Id == id).FirstOrDefault();
 

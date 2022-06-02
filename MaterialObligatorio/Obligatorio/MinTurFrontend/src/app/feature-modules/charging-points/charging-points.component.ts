@@ -1,4 +1,3 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ChargingPointService } from 'src/app/core/http-services/charging-point/charging-point.service';
 import { RegionService } from 'src/app/core/http-services/region/region.service';
@@ -15,13 +14,19 @@ export class ChargingPointsComponent implements OnInit {
   public description: string = '';
   public id: number = 0;
   public justCreatedChargingPoint = false;
+  public justDeletedChargingPoint = false;
   public regionId: number = 0;
   public address: string = '';
   public regions: RegionBasicInfoModel[] = [];
   public displayError: boolean = false;
+  public displayDeleteError: boolean = false;
   public errorMessages: string[] = [];
+  public deleteErrorMessages: string[] = [];
   public explanationTitle: string;
+  public deleteTitle: string;
   public explanationDescription: string;
+  public deleteDescription: string;
+  public idToDelete: number = 0;
   private chargingPointIntentModel: ChargingPointIntentModel;
 
   constructor(private regionService: RegionService, private chargingPointService: ChargingPointService) { }
@@ -58,6 +63,25 @@ export class ChargingPointsComponent implements OnInit {
     }
   } 
 
+  public deleteChargingPoint(): void {
+    this.validateIdToDelete();
+
+    if (!this.displayDeleteError){
+      this.chargingPointService.deleteChargingPoint(this.idToDelete).subscribe(
+        () => {
+          this.justDeletedChargingPoint = true;
+        },
+        error => {
+          this.displayDeleteError = true;
+          this.deleteErrorMessages.push(error);
+        }
+      );
+    }
+    else{
+      this.justDeletedChargingPoint = false;
+    }
+  } 
+
   private getRegions(): void {
     this.regionService.allRegions().subscribe(regions => {
         this.loadRegions(regions);
@@ -85,6 +109,10 @@ export class ChargingPointsComponent implements OnInit {
     this.id = id;
   }
 
+  public setDeleteId(id: number): void{
+    this.idToDelete = id;
+  }
+
   public setAddress(address: string): void{
     this.address = address;
   }
@@ -109,6 +137,17 @@ export class ChargingPointsComponent implements OnInit {
     if (!this.id || idString.length !== 4){
       this.displayError = true;
       this.errorMessages.push('El id debe ser de 4 dígitos');
+    }
+  }
+
+  private validateIdToDelete(): void {
+    this.displayDeleteError = false;
+    this.deleteErrorMessages = [];
+
+    const idString = this.idToDelete + '';
+    if (!this.idToDelete || idString.length !== 4){
+      this.displayDeleteError = true;
+      this.deleteErrorMessages.push('El id debe ser de 4 dígitos');
     }
   }
 
@@ -143,9 +182,15 @@ export class ChargingPointsComponent implements OnInit {
   public closeError(): void{
     this.displayError = false;
   }
+  
+  public closeDeleteError(): void{
+    this.displayDeleteError = false;
+  }
 
   private populateExplanationParams(): void{
     this.explanationTitle = 'Crear un punto de carga';
     this.explanationDescription = 'Aquí puedes crear puntos de carga';
+    this.deleteTitle = 'Borra un punto de carga';
+    this.deleteDescription = 'Aquí puedes borrar puntos de carga';
   }
 }
