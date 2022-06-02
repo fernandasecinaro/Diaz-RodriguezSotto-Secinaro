@@ -1,7 +1,8 @@
-name: Pipeline .NET
+name: Pipeline
 
 on:
   push:
+    branches: [ develop, main ]
   pull_request:
     branches: [ develop, main ]
     paths:
@@ -19,21 +20,46 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
+        node-version: [12.x, 14.x, 16.x]
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
-    - name: Install dependencies
+    - name: Install .NET dependencies
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet restore
       
-    - name: Build
+    - name: Build .NET
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet build --configuration Release --no-restore
+      
+    - name: Checkout
+      uses: actions/checkout@v2
+        
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        
+    - name: Setup Cache
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+          
+    - name: Build Angular
+      run: |
+        npm install
+        npm run build
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurFrontend
 
 
   test: 
