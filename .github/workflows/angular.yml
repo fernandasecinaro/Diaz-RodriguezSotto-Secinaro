@@ -38,3 +38,4 @@ jobs:
         npm install
         npm run build
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurFrontend
+      
