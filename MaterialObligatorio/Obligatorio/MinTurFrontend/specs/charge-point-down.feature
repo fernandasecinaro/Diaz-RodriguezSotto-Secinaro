@@ -9,3 +9,10 @@ Feature: Charging Point Elimination
     When I wait for 2000 ms
     Then I should see the message "El punto de carga ha sido dado de baja"
 
+  Scenario: Eliminate a charging point using an invalid id
+    Given the url "http://localhost:4200/remove-charging-point"
+    Given the id "164"
+    When I click the "Dar de baja" button
+    When I wait for 2000 ms
+    Then I should see the error message "El id ingresado no es valido"
+

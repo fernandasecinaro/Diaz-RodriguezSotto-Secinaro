@@ -34,6 +34,15 @@ When(/^I wait for (\d+) ms$/, function (timeToWait, callback) {
     setTimeout(callback, timeToWait);
 });
 
+
+Then(/^I should see the error message "([^"]*)"$/, function (text) {
+  browser.sleep(4000);
+  browser.waitForAngular().then(() => {
+    const message = element(by.css("removeChargingPointError"));
+    expect(message.getText()).to.eventually.equal(text);
+  });
+});
+
 Then(/^I should see the message "([^"]*)"$/, function (text) {
   browser.sleep(3000);
   browser.waitForAngular().then(() => {
