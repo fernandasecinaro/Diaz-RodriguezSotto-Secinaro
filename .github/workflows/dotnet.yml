@@ -9,7 +9,7 @@ on:
     - '**.csproj'
 
 env:
-  DOTNET_VERSION: '5.0.301' # The .NET SDK version to use
+  DOTNET_VERSION: '3.1.x' # The .NET SDK version to use
 
 jobs:
   build:
@@ -57,8 +57,22 @@ jobs:
       
     - name: Build
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Debug --no-restore
 
     - name: Test
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal -l:trx || true
+      
+    - name: Test report
+      uses: dorny/test-reporter@v1
+      with:
+        name: DotNET Tests Results
+        path: '**/*.trx'
+        reporter: dotnet-trx
+        fail-on-error: 'false'
+
+    - name: Upload tests results artifact
+      uses: actions/upload-artifact@v2.2.2
+      with:
+        name: GitHubActionsTestsResults
+        path: '**/*.trx'
