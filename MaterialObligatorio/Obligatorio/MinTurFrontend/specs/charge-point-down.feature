@@ -3,16 +3,13 @@ Feature: Charging Point Elimination
     Eliminates a charging point from the system
 
   Scenario: Eliminate a charging point using a valid id
-    Given the url "http://localhost:4200/remove-charging-point"
-    Given the id "1264"
-    When I click the "Dar de baja" button
-    When I wait for 2000 ms
-    Then I should see the message "El punto de carga ha sido dado de baja"
+    Given I view the "http://localhost:4200/charging-points-registration"
+    Given the id to delete is 1264
+    When I click on "Dar de baja" button
+    Then the charging point is deleted and a success message "El punto de carga ha sido dado de baja" is shown
 
   Scenario: Eliminate a charging point using an invalid id
-    Given the url "http://localhost:4200/remove-charging-point"
-    Given the id "164"
-    When I click the "Dar de baja" button
-    When I wait for 2000 ms
-    Then I should see the error message "El id ingresado no es valido"
-
+    Given I view the "http://localhost:4200/charging-points-registration"
+    Given the id to delete is 164
+    When I click on "Dar de baja" button
+    Then the charging point is not deleted and an error message "El id debe ser de 4 dígitos" is shown

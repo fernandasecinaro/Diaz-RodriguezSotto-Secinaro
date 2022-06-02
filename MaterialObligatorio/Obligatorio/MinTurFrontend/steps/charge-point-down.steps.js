@@ -4,49 +4,33 @@ var { Given } = require('cucumber');
 var { When } = require('cucumber');
 var { Then } = require('cucumber');
 
-// Use the external Chai As Promised to deal with resolving promises in
-// expectations
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
+const { browser  } = require('protractor');
 chai.use(chaiAsPromised);
 const expect = chai.expect;
 
-let id;
-
-Given(/^the url "([^"]*)"$/, function (url, callback) {
-    browser.get(url).then(function () {
-        callback();
-    });
+Given('the id to delete is {int}', function (int) {
+    element(by.css('#charging-point-to-delete-id')).value = int;
 });
 
-Given(/^the id "([^"]*)"$/, function (_id, callback) {
-  id = _id;
-  element(by.id("removeChargingPointIdInp")).value = _id;
-  callback();
+When('I click on "Dar de baja" button', function () {
+  browser.sleep(1000);
+  element(by.css('#charging-point-delete-button')).click();
 });
 
-When(/^I click the \"Dar de baja\" button$/, function (callback) {
-    element(by.id("removeChargingPointBtn")).click();
-    callback();
-});
-
-When(/^I wait for (\d+) ms$/, function (timeToWait, callback) {
-    setTimeout(callback, timeToWait);
-});
-
-
-Then(/^I should see the error message "([^"]*)"$/, function (text) {
-  browser.sleep(4000);
+Then('the charging point is deleted and a success message {string} is shown', function (string) {
+  browser.sleep(3000);
   browser.waitForAngular().then(() => {
-    const message = element(by.css("removeChargingPointError"));
-    expect(message.getText()).to.eventually.equal(text);
+      const message = element(by.css('#success-delete-paragraph')).getText();
+      expect(message).to.eventually.equal(string);
   });
 });
 
-Then(/^I should see the message "([^"]*)"$/, function (text) {
+Then('the charging point is not deleted and an error message {string} is shown', function (string) {
   browser.sleep(3000);
   browser.waitForAngular().then(() => {
-    const message = element(by.css(".removeChargingPointResult"));
-    expect(message.getText()).to.eventually.equal(text);
+      const message = element(by.css('#error-delete-paragraph')).getText();
+      expect(message).to.eventually.equal(string);
   });
 });
