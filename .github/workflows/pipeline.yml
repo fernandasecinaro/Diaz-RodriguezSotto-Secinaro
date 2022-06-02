@@ -22,7 +22,8 @@ jobs:
         node-version: [12.x, 14.x, 16.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
     
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
@@ -36,19 +37,26 @@ jobs:
     - name: Build .NET
       working-directory: ./MaterialObligatorio/Obligatorio/MinTurBackend
       run: dotnet build --configuration Release --no-restore
-      
-    - name: Checkout
-      uses: actions/checkout@v3
-      
+        
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
         
-    - run: npm ci
-    
-    - run: npm run build --if-present
+    - name: Setup Cache
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+          
+    - name: Build Angular
+      run: |
+        npm install
+        npm run build
+      working-directory: ./MaterialObligatorio/Obligatorio/MinTurFrontend
+
 
   test: 
 
