@@ -1,0 +1,1145 @@
+{
+  "id": "2f6b399e-8a70-434c-b616-c45fcfad3f7e",
+  "version": "2.0",
+  "name": "Obl ISA2",
+  "url": "http://localhost:4200/charging-points-registration",
+  "tests": [{
+    "id": "3f84ead4-4734-470e-8dce-b6c7ff23aebb",
+    "name": "1 - Alta exitosa",
+    "commands": [{
+      "id": "535f142e-bc4d-4e1a-949a-f883c0f1dd3a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd4e88c6-efe0-4352-8be0-24cde5b1a689",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d5eb3b4-7495-420b-9692-4185c0698197",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a62333bb-7ddf-4dee-b7d9-89c92af13b72",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "9082"
+    }, {
+      "id": "774798e6-d0dd-43b0-9911-f1ca0b239c9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-1 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c83-1 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be805611-6908-4a1a-9aaa-13603f699e95",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Parque"
+    }, {
+      "id": "535fe0c0-22ba-464f-9e8f-344bd3c48ad7",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9f7df97-bb8f-46c7-98db-35718229ec61",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Millab"
+    }, {
+      "id": "fc7d65e9-77e9-4eee-8c07-8480ee029643",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cbab47b-b783-4f91-b486-e5b7e296bd2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Región Centro Sur')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f31cba50-87ce-4828-b693-1b35d7311f96",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef90b6b-ccb4-4039-89ba-2545b673067e",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Desc"
+    }, {
+      "id": "50eff554-3195-4ff3-a3d8-4fa7df8271ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "218f6c7c-9477-4f9d-b33b-aeff1e87bdfe",
+    "name": "2 - Baja exitosa",
+    "commands": [{
+      "id": "66f94cca-7b57-4eb0-a3a4-8b66c11fdf4e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab5c3493-eeb4-46eb-b228-ccd21594ec50",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "424f8869-2510-4ce5-87ab-8f945ec96995",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-to-delete-id",
+      "targets": [
+        ["id=charging-point-to-delete-id", "id"],
+        ["css=#charging-point-to-delete-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-to-delete-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "799e033b-2aef-439c-b7c7-a0c3f7da1ae3",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-to-delete-id",
+      "targets": [
+        ["id=charging-point-to-delete-id", "id"],
+        ["css=#charging-point-to-delete-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-to-delete-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "9082"
+    }, {
+      "id": "0f3dda1d-b314-4ed1-91d6-ad243b008c98",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-delete-button",
+      "targets": [
+        ["id=charging-point-delete-button", "id"],
+        ["css=#charging-point-delete-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-delete-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de baja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffcc043a-59c6-48b7-b004-f07812a09261",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=charging-point-delete-button",
+      "targets": [
+        ["id=charging-point-delete-button", "id"],
+        ["css=#charging-point-delete-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-delete-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de baja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51418f4a-222d-4446-a4dc-3aff5a3020e9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=charging-point-delete-button",
+      "targets": [
+        ["id=charging-point-delete-button", "id"],
+        ["css=#charging-point-delete-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-delete-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de baja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1c07a597-80d5-4067-a7f1-f7fca123de79",
+    "name": "3 - Baja id invalido",
+    "commands": [{
+      "id": "61f88a1e-642b-4983-963e-c049f89047f9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdebfeef-4f73-4753-a949-d1fc54aca808",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5c8155c-ddaf-4698-9c54-2aca1a02e32f",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-to-delete-id",
+      "targets": [
+        ["id=charging-point-to-delete-id", "id"],
+        ["css=#charging-point-to-delete-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-to-delete-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49c9e4d5-0eb6-4ae7-b1a6-6edd0de73865",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-to-delete-id",
+      "targets": [
+        ["id=charging-point-to-delete-id", "id"],
+        ["css=#charging-point-to-delete-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-to-delete-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "8005b1ec-2ce0-42de-b73b-b2aa93b61092",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-delete-button",
+      "targets": [
+        ["id=charging-point-delete-button", "id"],
+        ["css=#charging-point-delete-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-delete-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de baja')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6b29da00-43d5-44de-9329-95b2820ae627",
+    "name": "4 - Alta id invalido",
+    "commands": [{
+      "id": "1cd7f5bb-d1b5-48c4-bece-90ae986564d4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe1ad54d-2400-480f-8ea3-8e9ee41fd17e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed926ce6-8240-489b-ab45-180aa42eb7ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9a0ee2-e3f8-4db6-a39c-73e105a00ca4",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "97ab9b0c-1969-49e9-9c7e-0071f6752bf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-1 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c83-1 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f4a1bef-62e4-405d-b16e-c6c762d320b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Parque"
+    }, {
+      "id": "6dcb1943-e439-41b6-9be9-f2d9a54b7c19",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "millan"
+    }, {
+      "id": "f99b3945-8e2c-4c71-966d-0e79c00e935a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "033f9061-08e4-43b9-9bea-ae7ef0f0a8c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Región Centro Sur')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af69d8a9-a6f6-4ba1-b4e7-0b46836422bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a67f7b3e-e3c3-4501-aa4a-64aa89fb09ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Desc"
+    }, {
+      "id": "bba493f8-58c1-44e3-80b1-3d1005700f83",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2aeb4be-f080-4c86-b144-3b752934400f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2a35835-03e4-4148-8c63-ac1c8960fdaa",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1ab64f5b-8b4b-43ea-a01a-936233e2eeb6",
+    "name": "5 - Alta nombre invalido",
+    "commands": [{
+      "id": "a89fa2f9-450f-42e7-9d5c-c14b1000ae95",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfc37441-78fb-46d3-8549-9947099f3ef3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f7cd174-e399-49ae-901c-418a6bf5a464",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4be5bcdb-6b88-4cb6-bdd9-1ac452d5273e",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "87767caf-0ab6-4f4c-9586-0b1c69d20196",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dca88ff-4041-484a-8b6c-16ee9a2e9e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-2 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c83-2 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ececa9b-9a84-4bcf-8715-6c21aca73e01",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "dwdew"
+    }, {
+      "id": "8e0544b6-477f-40e4-990e-69f806fcc9c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c51a751-d1a2-47cb-8fa3-440b24ce60bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Región Centro Sur')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53f1456-69ed-4b9f-bc26-5a4ef4167740",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "483c3d69-30c3-4c64-becf-d8171b927aaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "efwfwe"
+    }, {
+      "id": "21967b13-9431-4f90-8cd3-51fa925c7a9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3d4c1220-5c16-458f-b0cf-32ddaeed7f17",
+    "name": "6 - Alta direccion invalida",
+    "commands": [{
+      "id": "9450690e-85aa-49af-8ad4-6542f916a43d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cb9adab-d1cd-4c8f-bb77-484d8a8831b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "706ef03e-1726-4261-83a8-c78ef4292a70",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed49a897-0ce4-4cb2-86b7-e40fc91721f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1231"
+    }, {
+      "id": "ef1a0b3e-9231-4cc8-8f68-42767d9f5e2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aebbb9d-e9ae-4b9f-8907-047e698a16a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "wfeefw"
+    }, {
+      "id": "dc87c82b-4101-4bad-9731-03d60adf1565",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ef6cc2b-2ad3-4648-919d-e48d12c86820",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-4 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-4 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-4']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Región Corredor Pájaros Pintados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30d5aa1d-2b3b-4af8-98f1-518db7ce14e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-5 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c83-5 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c6cc4b8-c6c1-475d-af18-de8ad94599e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "fwewe"
+    }, {
+      "id": "74b50897-2f20-4370-8def-de69ae100f8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9f37bd-0954-4811-9d5f-bda9e93b8808",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c05b4fa3-b3e5-4ce7-ba16-eddda9e445c6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3747112b-dab8-4b02-91b2-833a2b09aa2f",
+    "name": "7 - Alta region invalida",
+    "commands": [{
+      "id": "e7c9d5e7-e476-4617-8833-7703a81022a4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b216b516-d632-4d08-a194-018cf95487c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23b94070-48bf-4c35-be04-a756c2996711",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b55c1b2-3731-4196-9d0a-98e7087efc83",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1211"
+    }, {
+      "id": "9c1cbda7-69f3-4f12-aaa7-72517e954947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-1 > .mat-form-field-wrapper",
+      "targets": [
+        ["css=.ng-tns-c83-1 > .mat-form-field-wrapper", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba95f264-a2a0-47c8-8d59-cafab97d6db8",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f54ec92c-46ad-4243-92d6-f85f7b709411",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "wdwe"
+    }, {
+      "id": "d2205d8d-0a3d-4a59-a376-0eabf6cfcb74",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6726694-3a4f-4fa7-90c6-c512fa06c668",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "wede"
+    }, {
+      "id": "e1c60104-cc07-4a61-b628-c022f3a26164",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fc71aa4-d98e-46eb-8a36-05dd2abd0ef3",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-description",
+      "targets": [
+        ["id=charging-point-description", "id"],
+        ["css=#charging-point-description", "css:finder"],
+        ["xpath=//input[@id='charging-point-description']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "ddewed"
+    }, {
+      "id": "d1aa28e6-f69a-48c1-bd3e-5b47f326bf8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e2e7f85-6e81-43bd-b1d4-d387ad771d0a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f99dbc6e-de41-47cf-9445-dbd873971b52",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f1fa3d69-96eb-4afb-9b59-5fc92bd46038",
+    "name": "8 - Alta descripcion invalida",
+    "commands": [{
+      "id": "8016e2fc-030f-41a4-815b-b42dfad77a85",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:4200/charging-points-registration",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ff0d389-7d02-478e-b049-3cfe9251ed52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ca53f70-ca7c-4d38-a11c-ed7427a5ab9e",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6e07ce-c824-4495-95ac-606f324b6247",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-id",
+      "targets": [
+        ["id=charging-point-id", "id"],
+        ["css=#charging-point-id", "css:finder"],
+        ["xpath=//input[@id='charging-point-id']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4121"
+    }, {
+      "id": "633dd6f7-73b3-4d7d-99b9-81e25c5dda8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a2eab55-9d1b-4b30-b2a3-5e7fac0313fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-name",
+      "targets": [
+        ["id=charging-point-name", "id"],
+        ["css=#charging-point-name", "css:finder"],
+        ["xpath=//input[@id='charging-point-name']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[2]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "fewfwe"
+    }, {
+      "id": "056257b9-f6f0-4335-8819-b949e1ef16d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b33bba57-94ca-42d0-8dea-f363bec5f29a",
+      "comment": "",
+      "command": "type",
+      "target": "id=charging-point-address",
+      "targets": [
+        ["id=charging-point-address", "id"],
+        ["css=#charging-point-address", "css:finder"],
+        ["xpath=//input[@id='charging-point-address']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[3]/mat-form-field/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/mat-form-field/div/div/div/input", "xpath:position"]
+      ],
+      "value": "fwefwe"
+    }, {
+      "id": "cf10fbc0-3074-4b0f-a35b-c170c72ee55e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mat-select-placeholder",
+      "targets": [
+        ["css=.mat-select-placeholder", "css:finder"],
+        ["xpath=//div[@id='mat-select-value-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-select/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,' ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ab949cb-a577-4db1-b053-37025705bc17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mat-option-1 > .mat-option-text",
+      "targets": [
+        ["css=#mat-option-1 > .mat-option-text", "css:finder"],
+        ["xpath=//mat-option[@id='mat-option-1']/span", "xpath:idRelative"],
+        ["xpath=//mat-option[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Región Centro Sur')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f59564c7-26fd-4cf8-9a0d-feb520128e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c83-5 > .mat-form-field-infix",
+      "targets": [
+        ["css=.ng-tns-c83-5 > .mat-form-field-infix", "css:finder"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[5]/mat-form-field/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/mat-form-field/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f18a63f7-e8f1-464f-9d47-d28f869535e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8bfdd1-6047-4a3a-82de-e2422d3f7f0a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b56b433e-b6e3-4364-a534-f20e73f85c29",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=charging-point-button",
+      "targets": [
+        ["id=charging-point-button", "id"],
+        ["css=#charging-point-button", "css:finder"],
+        ["xpath=//button[@id='charging-point-button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-content']/div/app-charging-points/div/div/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dar de alta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3c4b7f2b-f3b7-4d13-a2de-177eedea9ac7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:4200/", "http://localhost:4200/charging-points-registration"],
+  "plugins": []
+}
