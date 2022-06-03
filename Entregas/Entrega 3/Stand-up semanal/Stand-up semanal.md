@@ -11,3 +11,5 @@ El resultado de la standup se puede ver en el [tablero](https://github.com/ferna
 <img width="558" alt="image" src="https://user-images.githubusercontent.com/56087826/170891865-b3e11646-38fd-4032-b210-0243ead75a01.png">
 
 ## Semana 2
+
+[Video](https://youtu.be/aqnZXI5C9_8)
