@@ -12,7 +12,7 @@ A partir de realizar estos cambios, tuvimos que hacer ciertas modificaciones en 
 
 Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos los siguientes pasos:
 
-- **Requirements Definition**: Escribimos los criterios de aceptación.
+- **Requirements Definition**: Escribimos los criterios de aceptación. Los mismos se pueden ver en [la tarjeta de la user story](https://github.com/fernandasecinaro/Diaz-RodriguezSotto-Secinaro/issues/139)
 
 - **Test Cases Implementation**: En el caso del backend realizamos los casos de prueba con SpecFlow. Por otro lado, en el frontend realizamos los casos de prueba usando Selenium. Vale destacar que hubo que realizar ciertas modificaciones de los escenarios escritos en el primero paso para adaptarlos a las distintas tecnologías. Por ejemplo, en el caso del frontend, en Selenium no podemos probar el escenario donde el largo de dígitos del id se pasa del largo máximo, ya que al implementarlos en el paso 3, los inputs tendrían un atributo "max" que no deja que se escriba más de ese largo. 
 
