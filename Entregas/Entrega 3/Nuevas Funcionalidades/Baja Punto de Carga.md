@@ -22,4 +22,4 @@ Por lo tanto, como lo definimos en nuestro proceso de ingeniería, realizamos lo
 
 - **Refactoring**: Realizamos refactoring del código para mejorar la calidad del mismo.
 
-- **Integration Testing**: Realizamos una prueba de integración para comprobar que el frontend y el backend funcionen juntos tal cual es esperado. Para esto usamos el IDE de Cucumber.
+- **Integration Testing**: Realizamos una prueba de integración para comprobar que el frontend y el backend funcionen juntos tal cual es esperado. Para esto usamos el IDE de Selenium.
