@@ -32,3 +32,5 @@ Tarea | Integrante | Esfuerzo Estimado | Esfuerzo real |
 ## Distribución de esfuerzo
 
 ![distribucionesfuerzo](https://user-images.githubusercontent.com/70965718/172065634-2cc81d13-09b8-4385-a95f-084b8ce24724.png)
+
+Anotación: La actividad *deployment* hace referencia al pipeline
