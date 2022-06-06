@@ -22,7 +22,7 @@ namespace MinTur.BusinessLogic.ResourceManagers
 
             if (point != null)
             {
-                throw new InvalidRequestDataException("El id ya está registrado");
+                throw new InvalidRequestDataException("El id ya estï¿½ registrado");
             }
 
             int newChargingPointId = _repositoryFacade.StoreChargingPoint(chargingPoint);
