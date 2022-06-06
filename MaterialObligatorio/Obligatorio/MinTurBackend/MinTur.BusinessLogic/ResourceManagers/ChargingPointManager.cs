@@ -1,10 +1,7 @@
-using System;
-using System.Collections.Generic;
-using MinTur.BusinessLogicInterface.Pricing;
 using MinTur.BusinessLogicInterface.ResourceManagers;
 using MinTur.DataAccessInterface.Facades;
 using MinTur.Domain.BusinessEntities;
-using MinTur.Domain.Reports;
+using MinTur.Exceptions;
 
 namespace MinTur.BusinessLogic.ResourceManagers
 {
@@ -20,12 +17,19 @@ namespace MinTur.BusinessLogic.ResourceManagers
         public int RegisterChargingPoint(ChargingPoint chargingPoint)
         {
             chargingPoint.ValidOrFail();
-            TouristPoint relatedTouristPoint= _repositoryFacade.GetTouristPointById(chargingPoint.TouristPoint.Id);
+            Region _ = _repositoryFacade.GetRegionById(chargingPoint.RegionId);
+            ChargingPoint point = _repositoryFacade.GetChargingPointById(chargingPoint.Id);
+
+            if (point != null)
+            {
+                throw new InvalidRequestDataException("El id ya est� registrado");
+            }
 
             int newChargingPointId = _repositoryFacade.StoreChargingPoint(chargingPoint);
 
             return newChargingPointId;
         }
+
         public void DeleteChargingPointById(int id)
         {
             _repositoryFacade.DeleteChargingPoint(id);

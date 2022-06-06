@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using MinTur.Exceptions;
 using System.Linq;
 
@@ -22,8 +18,8 @@ namespace MinTur.Domain.BusinessEntities
         [Required]
         public string Address { get; set; }
         [Required]
-        public TouristPoint TouristPoint { get; set; }
-        public int TouristPointId { get; set; }
+        public Region Region { get; set; }
+        public int RegionId { get; set; }
         [Required]
         public string Description { get; set; }
 
@@ -43,7 +39,7 @@ namespace MinTur.Domain.BusinessEntities
             bool isNumericId = !id.Any(c => c < '0' || c > '9');
             bool hasFourDigitsOnly = fourDigitRegex.IsMatch(id);
             if (!isNumericId || id.Length > 4)
-                throw new InvalidRequestDataException("Invalid id");
+                throw new InvalidRequestDataException("El id debe tener 4 dígitos");
         }
 
         private void ValidateName()
@@ -51,7 +47,7 @@ namespace MinTur.Domain.BusinessEntities
             Regex nameRegex = new Regex(@"^[a-zA-ZñÑáéíóúü ]+$");
 
             if (Name == null || !nameRegex.IsMatch(Name) || Name.Length > NAME_MAX_LENGTH)
-                throw new InvalidRequestDataException("Invalid name");
+                throw new InvalidRequestDataException("El nombre debe tener entre 1 y 20 caracteres");
         }
 
         private void ValidateAddress()
@@ -59,7 +55,7 @@ namespace MinTur.Domain.BusinessEntities
             Regex addressRegex = new Regex(@"^[a-zA-ZñÑáéíóúü ]+$");
 
             if (Address == null || !addressRegex.IsMatch(Address) || Address.Length > ADDRESS_MAX_LENGTH)
-                throw new InvalidRequestDataException("Invalid address");
+                throw new InvalidRequestDataException("La dirección debe tener entre 1 y 30 caracteres");
         }
 
         private void ValidateDescription()
@@ -67,7 +63,7 @@ namespace MinTur.Domain.BusinessEntities
             Regex descriptionRegex = new Regex(@"^[a-zA-ZñÑáéíóúü ]+$");
 
             if (Description == null || !descriptionRegex.IsMatch(Description) || Description.Length > DESCRIPTION_MAX_LENGTH)
-                throw new InvalidRequestDataException("Invalid name");
+                throw new InvalidRequestDataException("La descripción debe tener entre 1 y 60 caracteres");
         }
     }
 }

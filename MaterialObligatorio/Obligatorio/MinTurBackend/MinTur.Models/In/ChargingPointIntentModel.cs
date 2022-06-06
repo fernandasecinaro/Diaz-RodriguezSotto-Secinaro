@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using MinTur.Domain.BusinessEntities;
+﻿using MinTur.Domain.BusinessEntities;
 
 namespace MinTur.Models.In
 {
@@ -12,7 +9,7 @@ namespace MinTur.Models.In
 
         public string Address { get; set; }
 
-        public int TouristPointId { get; set; }
+        public int RegionId { get; set; }
 
         public string Description { get; set; }
 
@@ -24,7 +21,7 @@ namespace MinTur.Models.In
                 Name = Name,
                 Address = Address,
                 Description = Description,
-                TouristPoint = new TouristPoint() { Id = TouristPointId },
+                RegionId = RegionId,
             };
         }
     }

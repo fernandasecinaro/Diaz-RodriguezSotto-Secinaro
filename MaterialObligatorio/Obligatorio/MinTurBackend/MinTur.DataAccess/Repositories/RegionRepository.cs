@@ -24,14 +24,12 @@ namespace MinTur.DataAccess.Repositories
 
         public Region GetRegionById(int regionId)
         {
-            Region retrievedRegion =  Context.Set<Region>().Include(r => r.TouristPoints).
-                Where(r => r.Id == regionId).FirstOrDefault();
+            Region retrievedRegion =  Context.Set<Region>().Where(r => r.Id == regionId).FirstOrDefault();
 
             if (retrievedRegion == null)
-                throw new ResourceNotFoundException("Could not find specified region");
+                throw new ResourceNotFoundException("Región Inválida");
 
             return retrievedRegion;
         }
-
     }
 }
